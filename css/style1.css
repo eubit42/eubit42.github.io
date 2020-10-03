@@ -33,15 +33,14 @@ header h1 {
 
 /* styling search bar */ 
 .search input[type=text]{ 
-    width:250px; 
+    width:200px; 
     height:25px; 
     border-radius:25px;
 } 
   
 .search{ 
-    margin:5px; 
-    float: right;
     padding: 10px;
+    float: right;
 } 
   
 .search button{ 
