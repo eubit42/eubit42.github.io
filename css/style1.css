@@ -33,7 +33,7 @@ header h1 {
 
 /* styling search bar */ 
 .search input[type=text]{ 
-    width:275px; 
+    width:250px; 
     height:25px; 
     border-radius:25px;
 } 
