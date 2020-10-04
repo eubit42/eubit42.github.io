@@ -27,23 +27,27 @@ header img {
     display: inline-block;
 }
 
-header h1 {
-    display: inline-block;
+.desktop {
+    display: none;
 }
 
 /* styling search bar */ 
-.search input[type=text]{ 
-    width:200px; 
-    height:25px; 
+.search input[type=text], .search-window input[type=text]{ 
+    width: 85%; 
+    height: 25px; 
     border-radius:25px;
 } 
   
-.search{ 
+.search {
+    text-align: center;
     padding: 10px;
-    float: right;
 } 
-  
-.search button{ 
+
+.search-window {
+    text-align: center;
+}
+
+.search button, .search-window button{ 
     background-color: #000000; 
     color: #f2f2f2;  
     padding: 10px;
@@ -91,12 +95,6 @@ nav li {
 }
 
 main {
-    width: 98%;
-    margin-left: auto;
-    margin-right: auto;
-    border-left: 1px solid #000000;
-    border-right: 1px solid #000000;
-    box-shadow: 0px 0px 15px #33AAFF;
     background-color: #FFFFFF;
 }
 
@@ -213,21 +211,23 @@ main p {
     display: none;
 }
 
-label {
-    border: 1px solid #cecfd5;
-    border-radius: 6px;
+.search-btn {
+    display: none;
 }
 
-ul {
-    border: 1px solid #cecfd5;
-    border-radius: 6px 0 0 6px;
+.lang-btn {
+    display: none;
+}
+
+.sign-in-btn {
+    display: none;
 }
 
 label {
     color: #FFFFFF;
     cursor: pointer;
     float: right;
-    margin: 12px;
+    margin: 12px 6px 0 0;
     font-size: 18px;
     padding: 5px 9px;
     transition: all .15s ease;
@@ -241,7 +241,45 @@ input.nav-btn:checked + label {
     color: #9799a7;
 }
 
+input.search-btn:checked + label {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+    color: #9799a7;
+}
+
+input.lang-btn:checked + label {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+    color: #9799a7;
+}
+
+input.sign-in-btn:checked + label {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+    color: #9799a7;
+}
+
 nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .15s ease;
+    background-color: #000000;
+}
+
+div.search-window {
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 0;
+    transition: all .15s ease;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+div.lang {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .15s ease;
+    background-color: #000000;
+}
+
+div.sign-in-form {
     max-height: 0;
     overflow: hidden;
     transition: all .15s ease;
@@ -252,19 +290,31 @@ input.nav-btn:checked ~ nav {
     max-height: 500px;
 }
 
-ul {
-    list-style: none;
-    float: right;
-    width: 100%;
+input.search-btn:checked ~ div.search-window {
+    max-height: 500px;
 }
 
-li {
+input.lang-btn:checked ~ div.lang {
+    max-height: 500px;
+}
+
+input.sign-in-btn:checked ~ div.sign-in-form {
+    max-height: 700px;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    float: right;
+}
+
+nav li {
     border-bottom: 1px solid #cecfd5;
     text-align: center;
     font-size: 22px;
 }
 
-li:last-child {
+nav li:last-child {
     border-bottom: 0;
 }
 
@@ -318,9 +368,251 @@ nav a:hover {
     clear: both;
 }
 
-@media (min-width: 700px) {
+
+
+
+.sign-in-form {
+    background-color: #000000;
+    width: 100%;
+  }
+  
+.tab-group {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+    width: 100%;
+}
+.tab-group::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.sign-in-form li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background: #cecfd5;
+    color: #000000;
+    font-size: 20px;
+    float: left;
+    width: 40%;
+    margin-left: 2%;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.sign-in-form li a:hover {
+    background: #cecfd5;
+    color: #000000;
+}
+
+.sign-in-form .active a {
+    color: #FFFFFF;
+}
+  
+.tab-content > div:last-child {
+    display:none;
+}
+ 
+.tab-content {
+    width: 85%;
+    margin: 0 auto;
+}
+  
+.sign-in-form h1 {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 200;
+    margin: 0 0 40px;
+}
+  
+.sign-in-form label {
+    position: absolute;
+    transform: translateY(6px);
+    padding: 20px;
+    left: 13px;
+    color: #FFFFFF;
+    transition: all 0.25s ease;
+    pointer-events: none;
+    font-size:22px;
+}
+    
+.sign-in-form label.req {
+    margin: 2px;
+}
+  
+.sign-in-form label.active {
+    transform: translateY(50px);
+    left: 2px;
+    font-size: 14px;
+}
+
+.sign-in-form label.active.req {
+    opacity: 0;
+}
+  
+.sign-in-form label.highlight {
+    color: #FFFFFF;
+}
+  
+.sign-in-form input, textarea {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: none;
+    background-image: none;
+    border: 1px solid #cecfd5;
+    color: #FFFFFF;
+    border-radius: 0;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+.sign-in-form input:focus, textarea:focus {
+          outline: 0;
+          border-color: #33AAFF;
+}
+  
+.sign-in-form textarea {
+    border: 2px solid #cecfd5;
+    resize: vertical;
+}
+  
+.sign-in-form .field-wrap {
+    position: relative;
+    margin-bottom: 40px;
+}
+  
+.sign-in-form .top-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.sign-in-form .top-row > div {
+    display: block;
+    width: 50%;
+    margin-right: 4%;
+}
+.sign-in-form .top-row > div:last-child { 
+    margin:0;
+}
+  
+.sign-in-form .button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #33AAFF;
+    transition: all.5s ease;
+    -webkit-appearance: none;
+    margin-bottom: 2%;
+}
+
+.sign-in-form .button:hover, .button:focus {
+      background: #33AAFF;
+      color: #FFFFFF;
+}
+  
+.sign-in-form .button-block {
+    display: block;
+    width: 100%;
+}
+  
+.sign-in-form .forgot {
+    margin-top: -20px;
+    text-align: right;
+}
+
+@media (min-width: 600px) {
 
     .btn-home {
         width: 30%;
+    }
+
+    h1.desktop {
+        display: inline-block;
+    }
+
+    nav {
+        width: 98%;
+        margin-left: 1%;
+    }
+
+    .search-window {
+        margin-left: 1%;
+        width: 98%;
+    }
+
+    .sign-in-form {
+        margin-left: 1%;
+        width: 98%;
+    }
+
+    main {
+        width: 98%;
+        margin: 0 auto;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        box-shadow: 0px 0px 15px #33AAFF;
+    }
+
+    .sign-in-form .button {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 720px) {
+
+    .btn-home {
+        width: 25%;
+    }
+
+    .sign-in-form .button {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 960px) {
+
+    .btn-home {
+        width: 20%;
+    }
+
+    div.desktop {
+        display: inline-block;
+        color: #FFFFFF;
+        width: 50%;
+    }
+
+    div.desktop li {
+        list-style: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 0 10px;
+    }
+
+    .sign-in-form .button {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width: 1080px) {
+
+    .btn-home {
+        width: 18%;
+    }
+
+    .sign-in-form .button {
+        width: 25%;
+        margin: 0 auto;
     }
 }
