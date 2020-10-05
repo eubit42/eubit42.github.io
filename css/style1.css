@@ -389,10 +389,14 @@ nav a:hover {
     clear: both;
 }
 
+.sign-in-form ul {
+    width: 65%;
+    margin: 10px auto 40px auto;
+}
+
 .sign-in-form ul li {
     display: inline-block;
-    width: 30%;
-    margin: 10px 0 0 12%;
+    width: 49%;
     text-align: center;
 }
 
@@ -573,6 +577,11 @@ nav a:hover {
         width: 50%;
         margin: 0 auto;
     }
+
+    .sign-in-form ul {
+        width: 50%;
+        margin: 10px auto 40px auto;
+    }
 }
 
 @media (min-width: 720px) {
@@ -584,6 +593,11 @@ nav a:hover {
     .sign-in-form .button {
         width: 40%;
         margin: 0 auto;
+    }
+
+    .sign-in-form ul {
+        width: 45%;
+        margin: 10px auto 40px auto;
     }
 }
 
@@ -611,6 +625,10 @@ nav a:hover {
         margin: 0 auto;
     }
 
+    .sign-in-form ul {
+        width: 40%;
+        margin: 10px auto 40px auto;
+    }
 }
 
 @media (min-width: 1080px) {
@@ -622,5 +640,10 @@ nav a:hover {
     .sign-in-form .button {
         width: 25%;
         margin: 0 auto;
+    }
+
+    .sign-in-form ul {
+        width: 35%;
+        margin: 10px auto 40px auto;
     }
 }
