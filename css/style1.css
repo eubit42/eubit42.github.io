@@ -104,7 +104,7 @@ nav a:hover {
   
 .search {
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
 } 
 
 .search-window, .lang-window {
@@ -123,6 +123,7 @@ nav a:hover {
 .lang-form {
     display: inline-block;
     width: 100%;
+    padding: 200px 0;
 }
 
 #lang-menu, #lang-submit {
@@ -339,13 +340,11 @@ img.motto {
     margin: 20px;
 }
 
-main h1 {
-    color: #55ACEE;
+.top {
     padding-top: 75px;
-    text-align: center;
 }
 
-main h2 {
+main h2, main h1 {
     color: #55ACEE;
     text-align: center;
 }
