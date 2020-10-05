@@ -390,7 +390,7 @@ nav a:hover {
 }
 
 .sign-in-form ul {
-    width: 75%;
+    width: 85%;
     margin: 10px auto 40px auto;
 }
 
@@ -579,7 +579,7 @@ nav a:hover {
     }
 
     .sign-in-form ul {
-        width: 50%;
+        width: 60%;
         margin: 10px auto 40px auto;
     }
 }
