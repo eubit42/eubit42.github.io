@@ -374,7 +374,7 @@ nav a:hover {
 .sign-in-form {
     background-color: #000000;
     width: 100%;
-  }
+}
   
 .tab-group {
     list-style: none;
@@ -382,33 +382,39 @@ nav a:hover {
     margin: 0 0 40px 0;
     width: 100%;
 }
+
 .tab-group::after {
     content: "";
     display: table;
     clear: both;
 }
+
+.sign-in-form ul li {
+    display: inline-block;
+    width: 30%;
+    margin: 10px 0 0 12%;
+    text-align: center;
+}
+
 .sign-in-form li a {
-    display: block;
     text-decoration: none;
-    padding: 15px;
+    padding: 30px;
+    border-radius: 6px;
     background: #cecfd5;
     color: #000000;
     font-size: 20px;
-    float: left;
-    width: 40%;
-    margin-left: 2%;
-    margin-top: 10px;
     text-align: center;
     cursor: pointer;
     transition: .5s ease;
 }
 .sign-in-form li a:hover {
-    background: #cecfd5;
+    background-color: #33AAFF;
     color: #000000;
 }
 
 .sign-in-form .active a {
     color: #FFFFFF;
+    background-color: #33AAFF;
 }
   
 .tab-content > div:last-child {
@@ -501,7 +507,7 @@ nav a:hover {
 .sign-in-form .button {
     border: 0;
     outline: none;
-    border-radius: 0;
+    border-radius: 6px;
     padding: 15px 0;
     font-size: 2rem;
     font-weight: bold;
@@ -520,7 +526,9 @@ nav a:hover {
   
 .sign-in-form .button-block {
     display: block;
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
+
 }
   
 .sign-in-form .forgot {
