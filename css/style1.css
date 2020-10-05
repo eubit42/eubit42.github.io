@@ -1,6 +1,4 @@
-.wrap {
-    width: 100%;
-}
+
 
 body {
     padding: 0;
@@ -11,13 +9,10 @@ header {
     width: 100%;
     height: 60px;
     position: fixed;
+    background-color: #000000;
     top: 0;
     width: 100%;
     box-shadow: 0 10px 15px #33AAFF;
-}
-
-.home-header {
-    background-color: #000000;
 }
 
 header img {
@@ -27,199 +22,7 @@ header img {
     display: inline-block;
 }
 
-.desktop {
-    display: none;
-}
-
-/* styling search bar */ 
-.search input[type=text], .search-window input[type=text]{ 
-    width: 85%; 
-    height: 25px; 
-    border-radius:25px;
-} 
-  
-.search {
-    text-align: center;
-    padding: 10px;
-} 
-
-.search-window {
-    text-align: center;
-}
-
-.search button, .search-window button{ 
-    background-color: #000000; 
-    color: #f2f2f2;  
-    padding: 10px;
-    font-size: 12px; 
-    border: none; 
-    cursor: pointer; 
-} 
-
-header a { 
-    text-decoration: none; 
-}
-
-header a:link { 
-    color: #FFFFFF; 
-}
-
-header a:visited { 
-    color: #B5C2CD; 
-}
-
-header a:hover { 
-    color: #33AAFF; 
-}
-
-/*nav {
-    display: inline-block;
-}
-
-nav li {
-    display: inline-block;
-    font-size: 1.2em;
-    padding: 10px;
-    margin: 10px;
-}*/
-
-#homeImage {
-    background-image: url("../images/world.gif");
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-main {
-    background-color: #FFFFFF;
-}
-
-.home-wrap {
-    background-color: #000000;
-}
-
-.coming-soon {
-    background-color: #000000;
-    text-align: center;
-}
-
-.btn {
-	font-family: 'Montserrat', sans-serif;
-	border-radius: 0;
-    padding: 0;
-    display: flex;
-    font-weight: bold;
-    justify-content: center;
-    width: 100%;
-	vertical-align: middle;
-	outline: none !important;
-}
-.btn-home {
-    background: none;
-    color: #FFFFFF;
-    display: inline-block;
-    width: 35%;
-    
-	transition: all 280ms ease-in-out 0s;
-	letter-spacing: 1px;
-}
-.btn-home::after, .btn-home::before {
- border: 1px solid rgba(255, 255, 255, 0);
- bottom: 0;
- content: " ";
- display: block;
- margin: 15px auto;
- position: relative;
- transition: all 280ms ease-in-out 0s;
- width: 0;
- box-shadow: 0px 0px 0px #33AAFF;
-}
-.btn-home:hover {
-    letter-spacing: 4px;
-    color: #33AAFF;
-}
-.btn-home:hover::after, .btn-home:hover::before {
- border: 1px solid #33AAFF;
- transition: width 350ms ease-in-out 0s;
- width: 100%;
- box-shadow: 0 0 19px 1px #33AAFF;
-}
-
-footer {
-    width: 100%;
-    color: #FFFFFF;
-    height: 100px;
-    border-top: 1px solid #000000;
-    box-shadow: 0 -5px 15px #33AAFF;
-}
-.home-footer {
-    background-color: #000000;
-}
-
-/*.event-countdown-timers {
-    display: flex;
-    margin-left: 22%;
-}
-
-.event-countdown-timer {
-    position: relative;
-}
-  
-.event-timer-text {
-    color: #33AAFF;
-    text-align:center;
-    position: absolute;
-    line-height: 125px;
-    width: 100%;
-}
-      
-svg {
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    transition: transform 1s linear;
-}
-        
-circle {
-    stroke-dasharray: 440;
-    stroke-width: 8px;
-    transition: stroke-dashoffset 1s linear;
-    stroke: #33AAFF;
-    fill: none;
-}*/
-
-#cs-image {
-    background-image: url("../images/blue_tech.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-main h2 {
-    color: #33AAFF;
-    text-align: center;
-}
-
-main p {
-    text-align: center;
-    padding: 20px;
-}
-
-.nav-btn {
-    display: none;
-}
-
-.search-btn {
-    display: none;
-}
-
-.lang-btn {
-    display: none;
-}
-
-.sign-in-btn {
+.desktop, .nav-btn, .search-btn, .lang-btn, .sign-in-btn {
     display: none;
 }
 
@@ -236,22 +39,7 @@ label:hover {
     color: #33AAFF;
 }
 
-input.nav-btn:checked + label {
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
-    color: #9799a7;
-}
-
-input.search-btn:checked + label {
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
-    color: #9799a7;
-}
-
-input.lang-btn:checked + label {
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
-    color: #9799a7;
-}
-
-input.sign-in-btn:checked + label {
+input.nav-btn:checked + label, input.search-btn:checked + label, input.lang-btn:checked + label, input.sign-in-btn:checked + label {
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
     color: #9799a7;
 }
@@ -263,7 +51,7 @@ nav {
     background-color: #000000;
 }
 
-div.search-window {
+div.search-window, div.lang-window, div.sign-in-form {
     max-height: 0;
     overflow: hidden;
     padding-top: 0;
@@ -272,29 +60,7 @@ div.search-window {
     color: #FFFFFF;
 }
 
-div.lang {
-    max-height: 0;
-    overflow: hidden;
-    transition: all .15s ease;
-    background-color: #000000;
-}
-
-div.sign-in-form {
-    max-height: 0;
-    overflow: hidden;
-    transition: all .15s ease;
-    background-color: #000000;
-}
-
-input.nav-btn:checked ~ nav {
-    max-height: 500px;
-}
-
-input.search-btn:checked ~ div.search-window {
-    max-height: 500px;
-}
-
-input.lang-btn:checked ~ div.lang {
+input.nav-btn:checked ~ nav, input.search-btn:checked ~ div.search-window, input.lang-btn:checked ~ div.lang-window {
     max-height: 500px;
 }
 
@@ -329,47 +95,60 @@ nav a:hover {
     color: #33AAFF;
 }
 
-.team {
-    margin: 0 auto;
-}
+/* styling search bar */ 
+.search input[type=text], .search-window input[type=text]{ 
+    width: 85%; 
+    height: 25px; 
+    border-radius:25px;
+} 
+  
+.search {
+    text-align: center;
+    padding: 10px;
+} 
 
-.gallery-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.gallery {
-    margin: 15px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    width: 200px;
-    background-color: #cecfd5;
-    box-shadow: 5px 5px 15px #777;
-}
-  
-.gallery:hover {
-    border: 1px solid #777;
-}
-  
-.gallery img {
-    width: 200px;
-    border-radius: 15px;
-    height: auto;
-}
-  
-.desc {
-    padding: 15px;
+.search-window, .lang-window {
     text-align: center;
 }
 
-.clear {
-    clear: both;
+.search button, .search-window button{ 
+    background-color: #000000; 
+    color: #f2f2f2;  
+    padding: 10px;
+    font-size: 12px; 
+    border: none; 
+    cursor: pointer; 
+} 
+
+.lang-form {
+    display: inline-block;
+    width: 100%;
 }
 
+#lang-menu, #lang-submit {
+    font-size: 22px;
+    border-radius: 6px;
+}
 
+#lang-menu {
+    width: 50%;
+}
 
+header a, footer a { 
+    text-decoration: none; 
+}
+
+header a:link, footer a:link { 
+    color: #FFFFFF; 
+}
+
+header a:visited, footer a:visited { 
+    color: #B5C2CD; 
+}
+
+header a:hover, #lang-submit:hover, footer a:hover { 
+    color: #33AAFF; 
+}
 
 .sign-in-form {
     background-color: #000000;
@@ -540,29 +319,280 @@ nav a:hover {
     text-align: right;
 }
 
+#homeImage {
+    background-image: url("../images/world.gif");
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+main {
+    background-color: #FFFFFF;
+}
+
+img.motto {
+    width: 40%;
+    border: 3px solid #55ACEE;
+    margin: 20px;
+}
+
+main h1 {
+    color: #55ACEE;
+    padding-top: 75px;
+    text-align: center;
+}
+
+main h2 {
+    color: #55ACEE;
+    text-align: center;
+}
+
+main h3 {
+    padding: 10px;
+}
+
+main p {
+    text-align: center;
+    padding: 20px;
+}
+
+main hr {
+    margin: 75px 0;
+}
+
+.home-wrap {
+    background-color: #000000;
+}
+
+.btn {
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 0;
+    padding: 0;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    width: 100%;
+	vertical-align: middle;
+	outline: none !important;
+}
+.btn-home {
+    background: none;
+    color: #FFFFFF;
+    display: inline-block;
+    width: 35%;
+    
+	transition: all 280ms ease-in-out 0s;
+	letter-spacing: 1px;
+}
+.btn-home::after, .btn-home::before {
+    border: 1px solid rgba(255, 255, 255, 0);
+    bottom: 0;
+    content: " ";
+    display: block;
+    margin: 15px auto;
+    position: relative;
+    transition: all 280ms ease-in-out 0s;
+    width: 0;
+    box-shadow: 0px 0px 0px #33AAFF;
+}
+.btn-home:hover {
+    letter-spacing: 4px;
+    color: #33AAFF;
+}
+.btn-home:hover::after, .btn-home:hover::before {
+    border: 1px solid #33AAFF;
+    transition: width 350ms ease-in-out 0s;
+    width: 100%;
+    box-shadow: 0 0 19px 1px #33AAFF;
+}
+
+.motto { 
+    width: 35%;
+    float: right; 
+}
+
+#cs-image {
+    background-image: url("../images/blue_tech.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team {
+    margin: 0 auto;
+}
+
+.gallery-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gallery {
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 200px;
+    background-color: #cecfd5;
+    box-shadow: 5px 5px 15px #777;
+}
+  
+.gallery:hover {
+    border: 1px solid #777;
+}
+  
+.gallery img {
+    width: 200px;
+    border-radius: 15px;
+    height: auto;
+}
+  
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    width: 100%;
+    color: #FFFFFF;
+    border-top: 1px solid #000000;
+    box-shadow: 0 -5px 15px #33AAFF;
+    text-align: center;
+    background-color: #000000;
+    padding-bottom: 10px;
+}
+
+footer p {
+    display: block;
+    margin-left: 10px;
+}
+
+footer hr {
+    margin: 10px 0;
+}
+
+footer ul { 
+    list-style-type: none;
+	margin: 0;
+	line-height: 30px;
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+    padding-left: 0; 
+}
+			
+footer h3 { 
+    font-size: 1.5em;
+	font-family: Arial, sans-serif;
+    font-weight: bold; 
+}
+
+#media-buttons li {
+    display: inline-block;
+    background-color: #000000;
+}
+            
+footer .fa { 
+    padding: 15px;
+	font-size: 20px;
+	width: 20px;
+	border: 1px solid #FFFFFF;
+	text-align: center;
+	text-decoration: none; }
+
+/* Add a hover effect if you want */
+footer .fa:hover { 
+    opacity: 0.7; 
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+footer .fa-facebook { 
+    background: #3B5998;
+	border-radius: 15px;
+    color: #FFFFFF; 
+}
+
+/* Twitter */
+footer .fa-twitter { 
+    background: #55ACEE;
+	border-radius: 15px;
+    color: #FFFFFF;
+}
+			  
+footer .fa-instagram { 
+    background: #E1306C;
+	border-radius: 15px;
+    color: #FFFFFF; 
+}
+				
+footer .fa-youtube { 
+    background: #C4302B;
+	border-radius: 15px;
+    color: #FFFFFF; 
+}
+			  
+footer .fa-soundcloud { 
+    background: #FF7700;
+	border-radius: 15px;
+    color: #FFFFFF; 
+}
+				 
+footer .fa-linkedin { 
+    background: #0E76A8;
+	border-radius: 15px;
+    color: #FFFFFF; 
+}
+		 
+footer .column { 
+    float: left;/*set up eqal columns of 3*/
+    width: 33.33%; 
+}
+
+footer .row:after { 
+    content: "";/* Clear floats after the columns */
+	display: table;
+    clear: both; 
+}
+
 @media (min-width: 600px) {
 
     .btn-home {
         width: 30%;
     }
 
-    h1.desktop {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li, h1.desktop {
         display: inline-block;
+        border: none;
     }
 
-    nav {
-        width: 98%;
-        margin-left: 1%;
+    ul.desktop {
+        display: block;
     }
 
-    .search-window {
+    ul.desktop li {
+        font-size: 15px;
+        display: block;
+    }
+
+    .search-window, .lang-window, .sign-in-form, nav {
         margin-left: 1%;
         width: 98%;
     }
 
-    .sign-in-form {
-        margin-left: 1%;
-        width: 98%;
+    #lang-menu {
+        width: 45%;
     }
 
     main {
@@ -571,6 +601,10 @@ nav a:hover {
         border-left: 1px solid #000000;
         border-right: 1px solid #000000;
         box-shadow: 0px 0px 15px #33AAFF;
+    }
+
+    img.motto {
+        width: 35%;
     }
 
     .sign-in-form .button {
@@ -586,11 +620,11 @@ nav a:hover {
 
 @media (min-width: 720px) {
 
-    .btn-home {
+    .btn-home, img.motto {
         width: 25%;
     }
 
-    .sign-in-form .button {
+    .sign-in-form .button, #lang-menu {
         width: 40%;
         margin: 0 auto;
     }
@@ -603,14 +637,14 @@ nav a:hover {
 
 @media (min-width: 960px) {
 
-    .btn-home {
+    .btn-home, img.motto{
         width: 20%;
     }
 
     div.desktop {
         display: inline-block;
         color: #FFFFFF;
-        width: 50%;
+        width: 60%;
     }
 
     div.desktop li {
@@ -629,6 +663,10 @@ nav a:hover {
         width: 40%;
         margin: 10px auto 40px auto;
     }
+
+    #lang-menu {
+        width: 35%;
+    }
 }
 
 @media (min-width: 1080px) {
@@ -646,4 +684,21 @@ nav a:hover {
         width: 35%;
         margin: 10px auto 40px auto;
     }
+
+    #lang-menu {
+        width: 30%;
+    }
+
+    @supports ( display: grid) { 
+	
+		section.grid { display: grid;
+				  grid-template-columns: 20% 80%; 
+				  grid-template-rows: auto; }
+				  
+		.left { grid-row: 1 / 2; grid-column: 1 / 2;
+				padding: 5px; }
+
+		.right { grid-row: 1 / 2; grid-column: 2 / 3;
+				 padding: 5px; }
+	}
 }
