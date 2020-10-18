@@ -13,14 +13,38 @@
         <header>
             <a href="index.html"><img src="images/logo.jpg" alt="Logo"/></a>
             <a href="index.html"><h1>Craigslist</h1></a>
-            <!--<input class="nav-btn" type="checkbox" id="toggle">
-            <label for="toggle">&#9776;</label>-->
             <input class="sign-in-btn" type="checkbox" id="sign-in">
             <label for="sign-in"><i class="fa fa-user-circle" aria-hidden="true"></i></label>
             <input class="lang-btn" type="checkbox" id="language">
             <label for="language"><i class="fa fa-language" aria-hidden="true"></i></label>
             <input class="loc-btn" type="checkbox" id="location">
             <label for="location"><i class="fas fa-map-marked-alt"></i></label>
+            <br><br>
+
+            <div class="log-in">
+                <div class="title">Login Page</div>
+                <form action="#">
+                    <div class="field">
+                        <input type="text" required>
+                        <label>Email Address</label>
+                    </div>
+                    <div class="field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="content">
+                        <div class="checkbox">
+                            <input type="checkbox" id="remember-me">
+                            <label for="remember-me">Remember me</label>
+                        </div>
+                        <div class="pass-link"><a href="#">Forgot password?</a></div>
+                    </div>
+                    <div class="field">
+                        <input type="submit" value="Login">
+                    </div>
+                    <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+                </form>
+            </div>
             
             <div class="lang-window">
                 <form class="lang-form" action="/action_page.php">
@@ -46,20 +70,31 @@
                 <form class="loc-form" action="/action_page.php">
                     <select id="loc-menu" name="loc-menu">
                       <option value="null">Select a Location . . .</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
+                      <option value="atlanta-ga">Atlanta, GA</option>
+                      <option value="austin-tx">Austin, TX</option>
+                      <option value="boston-ma">Boston, MA</option>
+                      <option value="chicago-il">Chicago, IL</option>
+                      <option value="dallas-tx">Dallas, TX</option>
+                      <option value="denver-co">Denver, CO</option>
+                      <option value="detroit-mi">Detroit, MI</option>
+                      <option value="houston-tx">Houston, TX</option>
+                      <option value="las-vegas-nv">Las Vegas, NV</option>
+                      <option value="los-angeles-ca">Los Angeles, CA</option>
+                      <option value="miami-fl">Miami, FL</option>
+                      <option value="minneapolis-mn">Minneapolis, MN</option>
+                      <option value="new-york-ny">New York, NY</option>
+                      <option value="orange-co-ca">Orange County, CA</option>
+                      <option value="philadelphia-pa">Philadelphia, PA</option>
+                      <option value="phoenix-az">Phoenix, AZ</option>
+                      <option value="portland-wa">Portland, WA</option>
+                      <option value="raleigh-nc">Raleigh, NC</option>
+                      <option value="sacremento-ca">Sacremento, CA</option>
+                      <option value="san-diego-ca">San Diego, CA</option>
+                      <option value="seattle-wa">Seattle, WA</option>
+                      <option value="sf-ca">San Francisco, CA</option>
+                      <option value="wash-dc">Washington DC</option>
                     </select>
-                    <input type="submit" id="lang-submit">
+                    <input type="submit" id="loc-submit">
                 </form>
             </div>
         </header>
@@ -68,7 +103,7 @@
             <div class="topnav" id="myTopnav">
                 <a href="#home" class="active">Home</a>
                 <div class="dropdown">
-                <button class="dropbtn">Community<i class="fa fa-caret-down"></i></button>
+                <button class="dropbtn">Community <i class="fa fa-caret-down"></i></button>
                 <div class="dropdown-content">
                     <a href="#">Activities</a>
                     <a href="#">Artists</a>
@@ -89,7 +124,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">For Sale<i class="fa fa-caret-down"></i></button>
+                <button class="dropbtn">For Sale <i class="fa fa-caret-down"></i></button>
                 <div class="dropdown-content">
                     <a href="#">Antiques</a>
                     <a href="#">Appliances</a>
@@ -127,7 +162,7 @@
                     <a href="#">Motorcycles</a>
                     <a href="#">Music Instructions</a>
                     <a href="#">Photo &amp; Video</a>
-                    <a href="#">RVs &amp Camping</a>
+                    <a href="#">RVs &amp; Camping</a>
                     <a href="#">Sporting</a>
                     <a href="#">Tickets</a>
                     <a href="#">Tools</a>
@@ -139,7 +174,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">Gigs<i class="fa fa-caret-down"></i></button>
+                <button class="dropbtn">Gigs <i class="fa fa-caret-down"></i></button>
                 <div class="dropdown-content">
                     <a href="#">Computer</a>
                     <a href="#">Creative</a>
@@ -152,7 +187,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">Housing<i class="fa fa-caret-down"></i></button>
+                <button class="dropbtn">Housing <i class="fa fa-caret-down"></i></button>
                 <div class="dropdown-content">
                     <a href="#">Apts / Housing</a>
                     <a href="#">Housing Swap</a>
@@ -167,7 +202,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">Jobs<i class="fa fa-caret-down"></i></button>
+                <button class="dropbtn">Jobs <i class="fa fa-caret-down"></i></button>
                 <div class="dropdown-content">
                     <a href="#">Accounting &amp; Finance</a>
                     <a href="#">Admin / Office</a>
@@ -203,7 +238,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">Services<i class="fa fa-caret-down"></i></button>
+                <button class="dropbtn">Services <i class="fa fa-caret-down"></i></button>
                 <div class="dropdown-content">
                     <a href="#">Automotive</a>
                     <a href="#">Beauty</a>
@@ -232,22 +267,171 @@
         </nav>
 
         <main>
-            <h2>Main</h2>
+            <h2 style="text-align:center">Latest Listings</h2>
+            <div class="main-gallery">
+                <div class="container">
+                    <div class="mySlides1">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="images/home1.1.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides1">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="images/home1.2.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides1">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="images/home1.3.jpg" alt="home demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 0)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 0)">&#10095;</button>
+
+                    <div class="caption-container"><p>$608 / 3br - Townhouse</p></div>
+                </div>
+                <div class="container ">
+                    <div class="mySlides2">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="images/home2.1.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides2">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="images/home2.2.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides2">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="images/home2.3.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides2">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="images/home2.4.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides2">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="images/home2.5.jpg" alt="home demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 1)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 1)">&#10095;</button>
+
+                    <div class="caption-container"><p>$685 / Fully Furnished, Beautiful 1-Bedroom Apt.</p></div>
+                </div>
+
+                <div class="container">
+                    <div class="mySlides3">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="images/home3.1.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides3">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="images/home3.2.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides3">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="images/home3.3.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides3">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="images/home3.4.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides3">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="images/home3.5.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides3">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="images/home3.6.jpg" alt="home demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 2)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 2)">&#10095;</button>
+
+                    <div class="caption-container"><p>$1,000 / 2 Bedroom, 2 Bath Apartment DUPLEX</p></div>
+                </div>
+                
+                
+                <div class="container">
+                    <div class="mySlides4">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="images/home4.1.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides4">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="images/home4.2.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides4">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="images/home4.3.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides4">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="images/home4.4.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides4">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="images/home4.5.jpg" alt="home demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 3)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 3)">&#10095;</button>
+
+                    <div class="caption-container"><p>$700 / Remodeled 2BR 1 BA with large yard</p></div>
+                </div>
+            </div>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </main>
 
         <footer>
             <h3>Footer</h3>
+            <p>&copy; 2020 Craigslist</p>
         </footer>
 
         <script>
             function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
+              var a = document.getElementById("myTopnav");
+              if (a.className === "topnav") {
+                a.className += " responsive";
               } else {
-                x.className = "topnav";
+                a.className = "topnav";
               }
+            }
+
+
+            var slideIndex = [1,1,1,1];
+            var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"];
+            showDivs(1, 0);
+            showDivs(1, 1);
+            showDivs(1, 2);
+            showDivs(1, 3);
+
+            function plusDivs(n, no) {
+                showDivs(slideIndex[no] += n, no);
+            }
+
+            function showDivs(n, no) {
+                var i;
+                var x = document.getElementsByClassName(slideId[no]);
+                if (n > x.length) {slideIndex[no] = 1}
+                if (n < 1) {slideIndex[no] = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                x[slideIndex[no]-1].style.display = "block";  
             }
             </script>
     </body>
+</html>
