@@ -267,7 +267,222 @@
         </nav>
 
         <main>
-            <h2 style="text-align:center">Latest Listings</h2>
+            <input class="filter-btn" type="checkbox" id="filter">
+            <label for="filter">Filter <i class="fas fa-filter" aria-hidden="true"></i></label>
+            <div class="filter-window">
+                <h3 class="center">Filters</h3>
+                <form action="/action_page.php">
+                    <div class="filter-wrap">
+                        
+                        <div class="filter-col">
+                            <label for="miles">Miles</label>
+                            <label for="zip">From Zip:</label><br>
+                            <input class="miles" type="number" id="miles" name="miles" placeholder="miles">
+                            <input class="miles" type="text" id="zip" name="zip" maxlength="5" placeholder="from zip"><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <label for="price-min">Price</label><br>
+                            <select class="price" id="price-min" name="price-min">
+                                <option value="min">Min</option>
+                                <option value="one">$0 - $500</option>
+                                <option value="two">$500 - $700</option>
+                                <option value="three">$700 - $900</option>
+                                <option value="four">$900 - $1100</option>
+                                <option value="five">$1100 - $1300</option>
+                                <option value="six">$1300 - $1500</option>
+                                <option value="seven">$1500 - $2000</option>
+                                <option value="eight">$2000+</option>
+                            </select> - 
+                            <select class="price" id="price-max" name="price-max">
+                                <option value="min">Max</option>
+                                <option value="one">$0 - $500</option>
+                                <option value="two">$500 - $800</option>
+                                <option value="three">$800 - $1200</option>
+                                <option value="four">$1200 - $1600</option>
+                                <option value="five">$1600 - $2000</option>
+                                <option value="six">$2000 - $2500</option>
+                                <option value="seven">$2500 - $3000</option>
+                                <option value="eight">$3000+</option>
+                            </select><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <label for="bed-min">Bedrooms</label><br>
+                            <select id="bed-min" name="bed-min">
+                                <option value="min">Min</option>
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                                <option value="four">4</option>
+                                <option value="five">5</option>
+                                <option value="six">6</option>
+                                <option value="seven">7</option>
+                                <option value="eight">8</option>
+                            </select> - 
+                            <select id="bed-max" name="bed-max">
+                                <option value="max">Max</option>
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                                <option value="four">4</option>
+                                <option value="five">5</option>
+                                <option value="six">6</option>
+                                <option value="seven">7</option>
+                                <option value="eight">8</option>
+                            </select><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <label for="bath-min">Bathrooms</label><br>
+                            <select id="bath-min" name="bath-min">
+                                <option value="min">Min</option>
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                                <option value="four">4</option>
+                                <option value="five">5</option>
+                                <option value="six">6</option>
+                                <option value="seven">7</option>
+                                <option value="eight">8</option>
+                            </select> - 
+                            <select id="bath-max" name="bath-max">
+                                <option value="max">Max</option>
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                                <option value="four">4</option>
+                                <option value="five">5</option>
+                                <option value="six">6</option>
+                                <option value="seven">7</option>
+                                <option value="eight">8</option>
+                            </select><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <label for="ft-min">FT<sup>2</sup></label><br>
+                            <select id="ft-min" name="ft-min">
+                                <option value="min">Min</option>
+                                <option value="one">0 FT<sup>2</sup></option>
+                                <option value="two">300 FT<sup>2</sup></option>
+                                <option value="three">600 FT<sup>2</sup></option>
+                                <option value="four">900 FT<sup>2</sup></option>
+                                <option value="five">1200 FT<sup>2</sup></option>
+                                <option value="six">1500 FT<sup>2</sup></option>
+                                <option value="seven">1800 FT<sup>2</sup></option>
+                                <option value="eight">+2100 FT<sup>2</sup></option>
+                            </select> - 
+                            <select id="ft-max" name="ft-max">
+                                <option value="max">Max</option>
+                                <option value="one">900 FT<sup>2</sup></option>
+                                <option value="two">1200 FT<sup>2</sup></option>
+                                <option value="three">1500 FT<sup>2</sup></option>
+                                <option value="four">1800 FT<sup>2</sup></option>
+                                <option value="five">2100 FT<sup>2</sup></option>
+                                <option value="six">2400 FT<sup>2</sup></option>
+                                <option value="seven">2700 FT<sup>2</sup></option>
+                                <option value="eight">+3000 FT<sup>2</sup></option>
+                            </select><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <input type="checkbox" id="home1" name="home1" value="titles">
+                            <label for="home1"> Search Titles only</label><br>
+                            <input type="checkbox" id="home2" name="home2" value="has-image">
+                            <label for="home2"> Has Image</label><br>
+                            <input type="checkbox" id="home3" name="home3" value="posted-today">
+                            <label for="home3"> Posted Today</label><br>
+                            <input type="checkbox" id="home4" name="home4" value="bundle-duplicates">
+                            <label for="home4"> Bundle Duplicates</label><br>
+                            <input type="checkbox" id="home5" name="home5" value="include-nearby">
+                            <label for="home5"> Include Nearby Areas</label><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <label for="availability">Availability</label><br>
+                            <select id="availability" name="loc-menu">
+                                <option value="all-dates">All Dates</option>
+                                <option value="within-30">Within 30 Days</option>
+                                <option value="beyond-30">Beyond 30 Days</option>
+                            </select><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <input type="checkbox" id="home6" name="home6" value="cats">
+                            <label for="home6"> Cats Allowed</label><br>
+                            <input type="checkbox" id="home7" name="home7" value="dogs">
+                            <label for="home7"> Dogs Allowed</label><br>
+                            <input type="checkbox" id="home8" name="home8" value="furnished">
+                            <label for="home8"> Furnished</label><br>
+                            <input type="checkbox" id="home9" name="home9" value="no-smoking">
+                            <label for="home9"> No Smoking</label><br>
+                            <input type="checkbox" id="home10" name="home10" value="wheelchair">
+                            <label for="home10"> Wheelchair Access</label><br>
+                            <input type="checkbox" id="home11" name="home11" value="ev-charging">
+                            <label for="home11"> EV Charging</label><br>
+                            <input type="checkbox" id="home12" name="home12" value="no-app-fee">
+                            <label for="home12"> No Application Fee</label><br>
+                            <input type="checkbox" id="home13" name="home13" value="no-broker-fee">
+                            <label for="home13"> No Broker Fee</label><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <p>Housing Type:</p>
+                            <input type="checkbox" id="home14" name="home14" value="apartment">
+                            <label for="home14"> Apartment</label><br>
+                            <input type="checkbox" id="home15" name="home15" value="condo">
+                            <label for="home15"> Condo</label><br>
+                            <input type="checkbox" id="home16" name="home16" value="cottage-cabin">
+                            <label for="home16"> Cottage/Cabin</label><br>
+                            <input type="checkbox" id="home17" name="home17" value="duplex">
+                            <label for="home17"> Duplex</label><br>
+                            <input type="checkbox" id="home18" name="home18" value="flat">
+                            <label for="home18"> Flat</label><br>
+                            <input type="checkbox" id="home19" name="home19" value="house">
+                            <label for="home19"> House</label><br>
+                            <input type="checkbox" id="home20" name="home20" value="in-law">
+                            <label for="home20"> In-Law</label><br>
+                            <input type="checkbox" id="home21" name="home21" value="loft">
+                            <label for="home21"> Loft</label><br>
+                            <input type="checkbox" id="home22" name="home22" value="townhouse">
+                            <label for="home22"> Townhouse</label><br>
+                            <input type="checkbox" id="home23" name="home23" value="manufactured">
+                            <label for="home23"> Manufactured</label><br>
+                            <input type="checkbox" id="home24" name="home24" value="assisted-living">
+                            <label for="home24"> Assisted Living</label><br>
+                            <input type="checkbox" id="home25" name="home25" value="land">
+                            <label for="home25"> Land</label><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <p>Laundry:</p>
+                            <input type="checkbox" id="home26" name="home26" value="w/d-unit">
+                            <label for="home26"> W/D in Unit</label><br>
+                            <input type="checkbox" id="home27" name="home27" value="w/d-hookup">
+                            <label for="home27"> W/D Hookups</label><br>
+                            <input type="checkbox" id="home28" name="home28" value="laundry-in-bldg">
+                            <label for="home28"> Laundry in Bldg</label><br>
+                            <input type="checkbox" id="home29" name="home29" value="laundry-on-site">
+                            <label for="home29"> Laundry on Site</label><br>
+                            <input type="checkbox" id="home30" name="home30" value="no-laundry-on-site">
+                            <label for="home30"> No Laundry on Site</label><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <p>Parking:</p>
+                            <input type="checkbox" id="home31" name="home31" value="carport">
+                            <label for="home31"> Carport</label><br>
+                            <input type="checkbox" id="home32" name="home32" value="attached-garage">
+                            <label for="home32"> Attached Garage</label><br>
+                            <input type="checkbox" id="home33" name="home33" value="detached-garage">
+                            <label for="home33"> Detached Garage</label><br>
+                            <input type="checkbox" id="home34" name="home34" value="off-street-parking">
+                            <label for="home34"> Off-Street Parking</label><br>
+                            <input type="checkbox" id="home35" name="home35" value="street-parking">
+                            <label for="home35"> Street Parking</label><br>
+                            <input type="checkbox" id="home36" name="home36" value="valet-parking">
+                            <label for="home36"> Valet Parking</label><br>
+                            <input type="checkbox" id="home37" name="home37" value="no-parking">
+                            <label for="home37"> No Parking</label>
+                        </div>
+                    </div>
+
+                    <input class="form-submit" type="reset" value="Reset Filters">
+                    <input class="form-submit" type="submit" value="Apply Filters">
+
+                  </form>
+            </div>
+            <h2 class="center">Latest Listings</h2>
             <div class="main-gallery">
                 <div class="container">
                     <div class="mySlides1">
@@ -391,8 +606,150 @@
 
                     <div class="caption-container"><p>$700 / Remodeled 2BR 1 BA with large yard</p></div>
                 </div>
+
+                <div class="container">
+                    <div class="mySlides5">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="images/home5.1.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides5">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="images/home5.2.jpg" alt="home demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 4)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 4)">&#10095;</button>
+
+                    <div class="caption-container"><p>$608 / 3br - Townhouse</p></div>
+                </div>
+
+                <div class="container">
+                    <div class="mySlides6">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="images/home6.1.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides6">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="images/home6.2.jpg" alt="home demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 5)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 5)">&#10095;</button>
+
+                    <div class="caption-container"><p>$608 / 3br - Townhouse</p></div>
+                </div>
+
+                <div class="container">
+                    <div class="mySlides7">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="images/home7.1.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides7">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="images/home7.2.jpg" alt="home demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 6)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 6)">&#10095;</button>
+
+                    <div class="caption-container"><p>$608 / 3br - Townhouse</p></div>
+                </div>
+
+                <div class="container">
+                    <div class="mySlides8">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="images/home8.1.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides8">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="images/home8.2.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides8">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="images/home8.3.jpg" alt="home demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 7)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 7)">&#10095;</button>
+
+                    <div class="caption-container"><p>$608 / 3br - Townhouse</p></div>
+                </div>
+
+                <div class="container">
+                    <div class="mySlides9">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="images/home9.1.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides9">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="images/home9.2.jpg" alt="home demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 8)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 8)">&#10095;</button>
+
+                    <div class="caption-container"><p>$608 / 3br - Townhouse</p></div>
+                </div>
+
+                <div class="container">
+                    <div class="mySlides10">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="images/home10.1.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides10">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="images/home10.2.jpg" alt="home demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 9)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 9)">&#10095;</button>
+
+                    <div class="caption-container"><p>$608 / 3br - Townhouse</p></div>
+                </div>
+
+                <div class="container">
+                    <div class="mySlides11">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="images/home11.1.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides11">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="images/home11.2.jpg" alt="home demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 10)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 10)">&#10095;</button>
+
+                    <div class="caption-container"><p>$608 / 3br - Townhouse</p></div>
+                </div>
+
+                <div class="container">
+                    <div class="mySlides12">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="images/home12.1.jpg" alt="home demo image">
+                    </div>
+
+                    <div class="mySlides12">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="images/home12.2.jpg" alt="home demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 11)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 11)">&#10095;</button>
+
+                    <div class="caption-container"><p>$608 / 3br - Townhouse</p></div>
+                </div>
+
             </div>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            
         </main>
 
         <footer>
@@ -411,12 +768,21 @@
             }
 
 
-            var slideIndex = [1,1,1,1];
-            var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"];
+            var slideIndex = [1,1,1,1,1,1,1,1,1,1,1,1];
+            var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8",
+            "mySlides9", "mySlides10", "mySlides11", "mySlides12"];
             showDivs(1, 0);
             showDivs(1, 1);
             showDivs(1, 2);
             showDivs(1, 3);
+            showDivs(1, 4);
+            showDivs(1, 5);
+            showDivs(1, 6);
+            showDivs(1, 7);
+            showDivs(1, 8);
+            showDivs(1, 9);
+            showDivs(1, 10);
+            showDivs(1, 11);
 
             function plusDivs(n, no) {
                 showDivs(slideIndex[no] += n, no);
