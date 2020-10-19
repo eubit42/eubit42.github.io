@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -34,13 +42,8 @@ header h1 {
 
 header a, footer a { 
   text-decoration: none;
+  color: #FFFFFF;
 }
-
-footer a:visited { 
-  color: #aa8cc5; 
-}
-
-
 
 #lang-submit:hover, footer a:hover, #loc-submit:hover { 
   background: #555;
@@ -335,7 +338,7 @@ form .field input:valid{
   border-radius: 6px;
 }
 
-.filter-wrap {
+.filter-wrap, .filter-wrap-car {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
@@ -351,8 +354,22 @@ form .field input:valid{
   width: 100px;
 }
 
+.make-model, .model-year, .odometer {
+  width: 75px;
+}
+
 .center {
   text-align: center;
+}
+
+.home-links {
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.home-links a:hover {
+  background: #ddd;
 }
 
 main {
@@ -360,6 +377,56 @@ main {
   margin-top: 100px;
   color: #000000;
 }
+
+/* Styling for the title (Month and Year) of the calendar */
+div.month {
+  font: x-large Verdana, Arial, Helvetica, sans-serif;
+  text-align: center;
+  height: 40px;
+  background-color: white;
+  color: black;
+  }
+
+/* Styling for the overall table */
+table {
+  font: 100% Verdana, Arial, Helvetica, sans-serif;
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 98%;
+  }
+
+/* Styling for the column headers (days of the week) */
+th {
+  padding: 0 0.5em;
+  text-align: center;
+  background-color:#555;
+  color:white;
+  }
+/* Styling for the individual cells (days) */
+td  {     
+  font-size: medium;
+  padding: 0.25em 0.25em;   
+  width: 14%; 
+  height: 80px;
+  text-align: left;
+  vertical-align: top;
+  }
+
+  table a {
+    color: #555;
+  }
+
+  td:hover, table a:hover {
+    background: rgba(167,91,187,1);
+    color: #FFFFFF;
+  }
+/* Styling for the date numbers */
+.date  {     
+  font-size: large;
+  padding: 0.25em 0.25em;   
+  text-align: left;
+  vertical-align: top;
+  }
 
 main img {
   vertical-align: middle;
@@ -377,6 +444,35 @@ main img {
   margin: 0 auto;
 }
 
+.individual {
+  width: 300px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.key-info {
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.key-info li {
+  list-style: none;
+}
+
+.left {
+  float: left;
+  width: 45%;
+  padding: 5px;
+}
+
+.right {
+  float: right;
+  width: 45%;
+  padding: 5px;
+}
+
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
@@ -384,6 +480,33 @@ main img {
   margin: 10px;
   border-radius: 10px;
   box-shadow: 10px 10px 15px #555;
+}
+
+iframe {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 6px;
+  box-shadow: 1px 1px 15px #555;
+}
+
+.key-info button {
+  background: #FF0000;
+  border-radius: 6px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.description {
+  margin: 20px;
+  max-width: 600px;
+  padding: 30px;
+}
+
+.individual img {
+  border-radius: 6px;
 }
 
 /* Hide the images by default */
@@ -445,7 +568,13 @@ main img {
   text-align: center;
   background-color: #FFFFFF;
   padding: 2px 16px;
+  font-weight: bold;
   border-radius: 10px;
+  color: #000000;
+}
+
+.caption-container a {
+  text-decoration: none;
   color: #000000;
 }
 
@@ -455,10 +584,25 @@ main img {
   clear: both;
 }
 
+
 footer {
   padding: 10px;
+  display: inline-flex;
+  width: 100%;
   background: rgb(85,26,139);
   background: linear-gradient(90deg, rgba(85,26,139,1) 40%, rgba(167,91,187,1) 100%);
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 75%;
+  justify-content: space-between;
+}
+
+footer li {
+  list-style: none;
 }
 
 @media screen and (max-width: 720px) {
@@ -515,9 +659,17 @@ footer {
     height: 700px;
   }
 
+  .filter-wrap-car {
+    height: 1200px;
+  }
+
   .filter-col {
     width: 255px;
     padding: 0 10px;
+  }
+
+  footer ul {
+    width: 65%;
   }
 
 }
@@ -531,6 +683,37 @@ footer {
     width: 300px;
     padding: 0 10px;
   }
+
+  .individual {
+    display: inline-block;
+    padding: 10px;
+    width: 50%;
+  }
+
+  .individual div.container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .individual img {
+    height: 100%;
+  }
+  
+  .key-info {
+    padding: 10px;
+    margin-right: 60px;
+    width: 275px;
+    float: right;
+  }
+
+  .title {
+    text-align: left;
+    margin: 20px;
+  }
+
+  footer ul {
+    width: 50%;
+  }
 }
 
 @media (min-width: 900px) {
@@ -538,14 +721,34 @@ footer {
     height: 500px;
   }
 
+  .filter-wrap-car {
+    height: 900px;
+  }
+
   .filter-col {
     width: 249px;
     padding: 0 10px;
+  }
+
+  footer ul {
+    width: 45%;
   }
 }
 
 @media (min-width: 1080px) {
   .filter-wrap {
     height: 375px;
+  }
+
+  .filter-wrap-car {
+    height: 650px;
+  }
+
+  .container {
+    margin: 20px;
+  }
+
+  footer ul {
+    width: 40%;
   }
 }
