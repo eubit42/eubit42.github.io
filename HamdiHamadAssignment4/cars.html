@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Craigslist: Springfield, IL</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1">
+        <link rel="stylesheet" href="css/styleCList.css">
+        <link rel="icon" type="image/png" href="images/logo.png" />
+        <script src="https://kit.fontawesome.com/96cdb310aa.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html"><img src="images/logo.jpg" alt="Logo"/></a>
+            <a href="index.html"><h1>Craigslist</h1></a>
+            <input class="sign-in-btn" type="checkbox" id="sign-in">
+            <label for="sign-in"><i class="fa fa-user-circle" aria-hidden="true"></i></label>
+            <input class="lang-btn" type="checkbox" id="language">
+            <label for="language"><i class="fa fa-language" aria-hidden="true"></i></label>
+            <input class="loc-btn" type="checkbox" id="location">
+            <label for="location"><i class="fas fa-map-marked-alt"></i></label>
+            <br><br>
+
+            <div class="log-in">
+                <div class="title">Login Page</div>
+                <form action="#">
+                    <div class="field">
+                        <input type="text" required>
+                        <label>Email Address</label>
+                    </div>
+                    <div class="field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="content">
+                        <div class="checkbox">
+                            <input type="checkbox" id="remember-me">
+                            <label for="remember-me">Remember me</label>
+                        </div>
+                        <div class="pass-link"><a href="#">Forgot password?</a></div>
+                    </div>
+                    <div class="field">
+                        <input type="submit" value="Login">
+                    </div>
+                    <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+                </form>
+            </div>
+            
+            <div class="lang-window">
+                <form class="lang-form" action="/action_page.php">
+                    <select id="lang-menu" name="lang-menu">
+                      <option value="null">Select a Language. . .</option>
+                      <option value="english">English</option>
+                      <option value="arabic">عربى</option>
+                      <option value="chinese">中文</option>
+                      <option value="french">Français</option>
+                      <option value="german">Deutsche</option>
+                      <option value="italian">Italiano</option>
+                      <option value="japanese">日本語</option>
+                      <option value="korean">韓国語</option>
+                      <option value="portugese">Português</option>
+                      <option value="russian">Pусский</option>
+                      <option value="spanish">Español</option>
+                      <option value="turkish">Türk</option>
+                    </select>
+                    <input type="submit" id="lang-submit">
+                </form>
+            </div>
+            <div class="loc-window">
+                <form class="loc-form" action="/action_page.php">
+                    <select id="loc-menu" name="loc-menu">
+                      <option value="null">Select a Location . . .</option>
+                      <option value="atlanta-ga">Atlanta, GA</option>
+                      <option value="austin-tx">Austin, TX</option>
+                      <option value="boston-ma">Boston, MA</option>
+                      <option value="chicago-il">Chicago, IL</option>
+                      <option value="dallas-tx">Dallas, TX</option>
+                      <option value="denver-co">Denver, CO</option>
+                      <option value="detroit-mi">Detroit, MI</option>
+                      <option value="houston-tx">Houston, TX</option>
+                      <option value="las-vegas-nv">Las Vegas, NV</option>
+                      <option value="los-angeles-ca">Los Angeles, CA</option>
+                      <option value="miami-fl">Miami, FL</option>
+                      <option value="minneapolis-mn">Minneapolis, MN</option>
+                      <option value="new-york-ny">New York, NY</option>
+                      <option value="orange-co-ca">Orange County, CA</option>
+                      <option value="philadelphia-pa">Philadelphia, PA</option>
+                      <option value="phoenix-az">Phoenix, AZ</option>
+                      <option value="portland-wa">Portland, WA</option>
+                      <option value="raleigh-nc">Raleigh, NC</option>
+                      <option value="sacremento-ca">Sacremento, CA</option>
+                      <option value="san-diego-ca">San Diego, CA</option>
+                      <option value="seattle-wa">Seattle, WA</option>
+                      <option value="sf-ca">San Francisco, CA</option>
+                      <option value="wash-dc">Washington DC</option>
+                    </select>
+                    <input type="submit" id="loc-submit">
+                </form>
+            </div>
+        </header>
+
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                <button class="dropbtn">Community <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Activities</a>
+                    <a href="#">Artists</a>
+                    <a href="#">Childcare</a>
+                    <a href="#">Classes</a>
+                    <a href="#">Events</a>
+                    <a href="#">General</a>
+                    <a href="#">Groups</a>
+                    <a href="#">Local News</a>
+                    <a href="#">Lost &amp; Found</a>
+                    <a href="#">Missed Connections</a>
+                    <a href="#">Musicians</a>
+                    <a href="#">Pets</a>
+                    <a href="#">Politics</a>
+                    <a href="#">Rants &amp; Raves</a>
+                    <a href="#">Rideshare</a>
+                    <a href="#">Volunteers</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">For Sale <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Antiques</a>
+                    <a href="#">Appliances</a>
+                    <a href="#">Arts &amp; Crafts</a>
+                    <a href="#">ATV/UTV/SNO</a>
+                    <a href="#">Auto Parts</a>
+                    <a href="#">Aviation</a>
+                    <a href="#">Baby &amp; Kids</a>
+                    <a href="#">Barter</a>
+                    <a href="#">Beauty &amp; Health</a>
+                    <a href="#">Bike Parts</a>
+                    <a href="#">Bikes</a>
+                    <a href="#">Boat Parts</a>
+                    <a href="#">Boats</a>
+                    <a href="#">Books</a>
+                    <a href="#">Business</a>
+                    <a href="#">Cars &amp; Trucks</a>
+                    <a href="#">CDs/DVD/VHS</a>
+                    <a href="#">Cell Phones</a>
+                    <a href="#">Clothes &amp; Access.</a>
+                    <a href="#">Collectibles</a>
+                    <a href="#">Computer Parts</a>
+                    <a href="#">Computers</a>
+                    <a href="#">Electronics</a>
+                    <a href="#">Farm &amp; Garden</a>
+                    <a href="#">Free</a>
+                    <a href="#">Furniture</a>
+                    <a href="#">Garage Sale</a>
+                    <a href="#">General</a>
+                    <a href="#">Heavy Equip.</a>
+                    <a href="#">Household</a>
+                    <a href="#">Jewelry</a>
+                    <a href="#">Materials</a>
+                    <a href="#">Motorcycle Parts</a>
+                    <a href="#">Motorcycles</a>
+                    <a href="#">Music Instructions</a>
+                    <a href="#">Photo &amp; Video</a>
+                    <a href="#">RVs &amp; Camping</a>
+                    <a href="#">Sporting</a>
+                    <a href="#">Tickets</a>
+                    <a href="#">Tools</a>
+                    <a href="#">Toys &amp; Games</a>
+                    <a href="#">Trailers</a>
+                    <a href="#">Video Gaming</a>
+                    <a href="#">Wanted</a>
+                    <a href="#">Wheels &amp; Tires</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Gigs <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Computer</a>
+                    <a href="#">Creative</a>
+                    <a href="#">Crew</a>
+                    <a href="#">Domestic</a>
+                    <a href="#">Event</a>
+                    <a href="#">Labor</a>
+                    <a href="#">Talent</a>
+                    <a href="#">Writing</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Housing <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="homes.html">Apts / Housing</a>
+                    <a href="#">Housing Swap</a>
+                    <a href="#">Housing Wanted</a>
+                    <a href="#">Office / Commercial</a>
+                    <a href="#">Parking / Storage</a>
+                    <a href="#">Real Estate For Sale</a>
+                    <a href="#">Rooms / Shared</a>
+                    <a href="#">Rooms Wanted</a>
+                    <a href="#">Sublets / Temporary</a>
+                    <a href="#">Vaction Rentals</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Jobs <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Accounting &amp; Finance</a>
+                    <a href="#">Admin / Office</a>
+                    <a href="#">Arch / Engineering</a>
+                    <a href="#">Art / Media / Design</a>
+                    <a href="#">Biotech / Science</a>
+                    <a href="#">Business / Management</a>
+                    <a href="#">Customer Service</a>
+                    <a href="#">Education</a>
+                    <a href="#">Etc / Misc</a>
+                    <a href="#">Food / Bev / Hosp</a>
+                    <a href="#">General Labor</a>
+                    <a href="#">Government</a>
+                    <a href="#">Human Resources</a>
+                    <a href="#">Legal / Paralegal</a>
+                    <a href="#">Manufacturing</a>
+                    <a href="#">Marketing / PR / Ad</a>
+                    <a href="#">Medical / Health</a>
+                    <a href="#">Nonprofit Sector</a>
+                    <a href="#">Real Estate</a>
+                    <a href="#">Retail / Wholesale</a>
+                    <a href="#">Sales / Biz Dev</a>
+                    <a href="#">Salon / Spa / Fitness</a>
+                    <a href="#">Security</a>
+                    <a href="#">Skilled Trade / Craft</a>
+                    <a href="#">Software / QA / DBA</a>
+                    <a href="#">Systems / Network</a>
+                    <a href="#">Technical Support</a>
+                    <a href="#">Transport</a>
+                    <a href="#">TV / Film / Video</a>
+                    <a href="#">Web / Info Design</a>
+                    <a href="#">Writing / Editing</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Services <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Automotive</a>
+                    <a href="#">Beauty</a>
+                    <a href="#">Cell / Mobile</a>
+                    <a href="#">Computer</a>
+                    <a href="#">Creative</a>
+                    <a href="#">Cycle</a>
+                    <a href="#">Event</a>
+                    <a href="#">Farm &amp; Garden</a>
+                    <a href="#">Financial</a>
+                    <a href="#">Household</a>
+                    <a href="#">Labor / Move</a>
+                    <a href="#">Legal</a>
+                    <a href="#">Lessons</a>
+                    <a href="#">Marine</a>
+                    <a href="#">Pet</a>
+                    <a href="#">Real Estate</a>
+                    <a href="#">Skilled Trade</a>
+                    <a href="#">Sm Biz Ads</a>
+                    <a href="#">Travel / Vacation</a>
+                    <a href="#">Write / Ed / Tran</a>
+                </div>
+            </div> 
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        </nav>
+
+        <main>
+            <input class="filter-btn" type="checkbox" id="filter">
+            <label for="filter">Filter <i class="fas fa-filter" aria-hidden="true"></i></label>
+            <div class="filter-window">
+                <h3 class="center">Filters</h3>
+                <form action="/action_page.php">
+                    <div class="filter-wrap-car">
+                        
+                        <div class="filter-col">
+                            <label for="miles">Miles</label>
+                            <label for="zip">From Zip:</label><br>
+                            <input class="miles" type="number" id="miles" name="miles" placeholder="miles">
+                            <input class="miles" type="text" id="zip" name="zip" maxlength="5" placeholder="from zip"><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <label for="price-min">Price</label><br>
+                            <select class="price" id="price-min" name="price-min">
+                                <option value="min">Min</option>
+                                <option value="one">$0</option>
+                                <option value="two">$500</option>
+                                <option value="three">$1,000</option>
+                                <option value="four">$1,500</option>
+                                <option value="five">$2,000</option>
+                                <option value="six">$5,000</option>
+                                <option value="seven">$10,000</option>
+                                <option value="eight">$20,000+</option>
+                            </select> - 
+                            <select class="price" id="price-max" name="price-max">
+                                <option value="min">Max</option>
+                                <option value="one">$500</option>
+                                <option value="two">$1,000</option>
+                                <option value="three">$1,500</option>
+                                <option value="four">$2,500</option>
+                                <option value="five">$5,000</option>
+                                <option value="six">$10,000</option>
+                                <option value="seven">$25,000</option>
+                                <option value="eight">$50,000+</option>
+                            </select><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <label for="make">Make</label>
+                            <label for="model"> &amp; Model:</label><br>
+                            <input class="make-model" type="text" id="make" name="make" placeholder="make">
+                            <input class="make-model" type="text" id="model" name="model" placeholder="model"><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <label for="model-min">Model Year:</label><br>
+                            <input class="model-year" type="text" id="model-min" name="model-min" maxlength="4" placeholder="min">
+                            <input class="model-year" type="text" id="model-max" name="model-max" maxlength="4" placeholder="max"><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <label for="odo-min">Odometer:</label><br>
+                            <input class="odometer" type="text" id="odo-min" name="odo-min" placeholder="min">
+                            <input class="odometer" type="text" id="odo-max" name="odo-max" placeholder="max"><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <input type="checkbox" id="cars1" name="cars1" value="titles">
+                            <label for="cars1"> Search Titles only</label><br>
+                            <input type="checkbox" id="cars2" name="cars2" value="has-image">
+                            <label for="cars2"> Has Image</label><br>
+                            <input type="checkbox" id="cars3" name="cars3" value="posted-today">
+                            <label for="cars3"> Posted Today</label><br>
+                            <input type="checkbox" id="cars4" name="cars4" value="bundle-duplicates">
+                            <label for="cars4"> Bundle Duplicates</label><br>
+                            <input type="checkbox" id="cars5" name="cars5" value="include-nearby">
+                            <label for="cars5"> Include Nearby Areas</label><br><br>
+                            <input type="checkbox" id="cars6" name="cars6" value="crypto-ok">
+                            <label for="cars6"> Cryptocurrency OK</label><br>
+                            <input type="checkbox" id="cars7" name="cars7" value="delivery-available">
+                            <label for="cars7"> Delivery Available</label><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <p>Coondition:</p>
+                            <input type="checkbox" id="cars8" name="cars8" value="new">
+                            <label for="cars8"> New</label><br>
+                            <input type="checkbox" id="cars9" name="cars9" value="like-new">
+                            <label for="cars9"> Like New</label><br>
+                            <input type="checkbox" id="cars10" name="cars10" value="excellent">
+                            <label for="cars10"> Excellent</label><br>
+                            <input type="checkbox" id="cars11" name="cars11" value="good">
+                            <label for="cars11"> Good</label><br>
+                            <input type="checkbox" id="cars12" name="cars12" value="fair">
+                            <label for="cars12"> Fair</label><br>
+                            <input type="checkbox" id="cars13" name="cars13" value="salvage">
+                            <label for="cars13"> Salvage</label><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <p>Cylinders:</p>
+                            <input type="checkbox" id="cars14" name="cars14" value="3-cylinders">
+                            <label for="cars14"> 3 Cylinders</label><br>
+                            <input type="checkbox" id="cars15" name="cars15" value="4-cylinders">
+                            <label for="cars15"> 4 Cylinders</label><br>
+                            <input type="checkbox" id="cars16" name="cars16" value="5-cylinders">
+                            <label for="cars16"> 5 Cylinders</label><br>
+                            <input type="checkbox" id="cars17" name="cars17" value="6-cylinders">
+                            <label for="cars17"> 6 Cylinders</label><br>
+                            <input type="checkbox" id="cars18" name="cars18" value="8-cylinders">
+                            <label for="cars18"> 8 Cylinders</label><br>
+                            <input type="checkbox" id="cars19" name="cars19" value="10-cylinders">
+                            <label for="cars19"> 10 Cylinders</label><br>
+                            <input type="checkbox" id="cars20" name="cars20" value="12-cylinders">
+                            <label for="cars20"> 12 Cylinders</label><br>
+                            <input type="checkbox" id="cars21" name="cars21" value="other">
+                            <label for="cars21"> Other</label><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <p>Drive:</p>
+                            <input type="checkbox" id="cars22" name="cars22" value="fwd">
+                            <label for="cars22"> FWD</label><br>
+                            <input type="checkbox" id="cars23" name="cars23" value="rwd">
+                            <label for="cars23"> RWD</label><br>
+                            <input type="checkbox" id="cars24" name="cars24" value="4wd">
+                            <label for="cars24"> 4WD</label><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <p>Fuel:</p>
+                            <input type="checkbox" id="cars25" name="cars25" value="gas">
+                            <label for="cars25"> Gas</label><br>
+                            <input type="checkbox" id="cars26" name="cars26" value="diesel">
+                            <label for="cars26"> Diesel</label><br>
+                            <input type="checkbox" id="cars27" name="cars27" value="hybrid">
+                            <label for="cars27"> Hybrid</label><br>
+                            <input type="checkbox" id="cars28" name="cars28" value="electric">
+                            <label for="cars28"> Electric</label><br>
+                            <input type="checkbox" id="cars29" name="cars29" value="other">
+                            <label for="cars29"> Other</label><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <p>Paint Color:</p>
+                            <input type="checkbox" id="cars30" name="cars30" value="black">
+                            <label for="cars30"> Black</label><br>
+                            <input type="checkbox" id="cars31" name="cars31" value="blue">
+                            <label for="cars31"> Blue</label><br>
+                            <input type="checkbox" id="cars32" name="cars32" value="brown">
+                            <label for="cars32"> Brown</label><br>
+                            <input type="checkbox" id="cars33" name="cars33" value="green">
+                            <label for="cars33"> Green</label><br>
+                            <input type="checkbox" id="cars34" name="cars34" value="grey">
+                            <label for="cars34"> Grey</label><br>
+                            <input type="checkbox" id="cars35" name="cars35" value="orange">
+                            <label for="cars35"> Orange</label><br>
+                            <input type="checkbox" id="cars36" name="cars36" value="purple">
+                            <label for="cars36"> Purple</label><br>
+                            <input type="checkbox" id="cars37" name="cars37" value="red">
+                            <label for="cars37"> Red</label><br>
+                            <input type="checkbox" id="cars38" name="cars38" value="silver">
+                            <label for="cars38"> Silver</label><br>
+                            <input type="checkbox" id="cars39" name="cars39" value="white">
+                            <label for="cars39"> White</label><br>
+                            <input type="checkbox" id="cars40" name="cars40" value="yellow">
+                            <label for="cars40"> Yellow</label><br>
+                            <input type="checkbox" id="cars41" name="cars41" value="custom">
+                            <label for="cars41"> Custom</label><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <p>Size:</p>
+                            <input type="checkbox" id="cars42" name="cars42" value="compact">
+                            <label for="cars42"> Compact</label><br>
+                            <input type="checkbox" id="cars43" name="cars43" value="full-size">
+                            <label for="cars43"> Full-Size</label><br>
+                            <input type="checkbox" id="cars44" name="cars44" value="mid-size">
+                            <label for="cars44"> Mid-Size</label><br>
+                            <input type="checkbox" id="cars45" name="cars45" value="sub-compact">
+                            <label for="cars45"> Sub-Compact</label><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <p>Title Status:</p>
+                            <input type="checkbox" id="cars46" name="cars46" value="clean">
+                            <label for="cars46"> Clean</label><br>
+                            <input type="checkbox" id="cars47" name="cars47" value="salvage">
+                            <label for="cars47"> Salvage</label><br>
+                            <input type="checkbox" id="cars48" name="cars48" value="rebuilt">
+                            <label for="cars48"> Rebuilt</label><br>
+                            <input type="checkbox" id="cars49" name="cars49" value="parts-only">
+                            <label for="cars49"> Parts Only</label><br>
+                            <input type="checkbox" id="cars50" name="cars50" value="lien">
+                            <label for="cars50"> Lien</label><br>
+                            <input type="checkbox" id="cars51" name="cars51" value="missing">
+                            <label for="cars51"> Missing</label><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <p>Transmission:</p>
+                            <input type="checkbox" id="cars52" name="cars52" value="manual">
+                            <label for="cars52"> Manual</label><br>
+                            <input type="checkbox" id="cars53" name="cars53" value="automatic">
+                            <label for="cars53"> Automatic</label><br>
+                            <input type="checkbox" id="cars54" name="cars54" value="other">
+                            <label for="cars54"> Other</label><br><br>
+                        </div>
+                        <div class="filter-col">
+                            <p>Type:</p>
+                            <input type="checkbox" id="cars55" name="cars55" value="bus">
+                            <label for="cars55"> Bus</label><br>
+                            <input type="checkbox" id="cars56" name="cars56" value="convertable">
+                            <label for="cars56"> Convertable</label><br>
+                            <input type="checkbox" id="cars57" name="cars57" value="coupe">
+                            <label for="cars57"> Coupe</label><br>
+                            <input type="checkbox" id="cars58" name="cars58" value="hatchback">
+                            <label for="cars58"> Hatchback</label><br>
+                            <input type="checkbox" id="cars59" name="cars59" value="mini-van">
+                            <label for="cars59"> Mini-Van</label><br>
+                            <input type="checkbox" id="cars60" name="cars60" value="offroad">
+                            <label for="cars60"> Offroad</label><br>
+                            <input type="checkbox" id="cars61" name="cars61" value="pickup">
+                            <label for="cars61"> Pickup</label><br>
+                            <input type="checkbox" id="cars62" name="cars62" value="sedan">
+                            <label for="cars62"> Sedan</label><br>
+                            <input type="checkbox" id="cars63" name="cars63" value="truck">
+                            <label for="cars63"> Truck</label><br>
+                            <input type="checkbox" id="cars64" name="cars64" value="suv">
+                            <label for="cars64"> SUV</label><br>
+                            <input type="checkbox" id="cars65" name="cars65" value="wagon">
+                            <label for="cars65"> Wagon</label><br>
+                            <input type="checkbox" id="cars66" name="cars66" value="van">
+                            <label for="cars66"> Van</label><br>
+                            <input type="checkbox" id="cars67" name="cars67" value="other">
+                            <label for="cars67"> Other</label><br><br>
+                        </div>
+                    </div>
+
+                    <input class="form-submit" type="reset" value="Reset Filters">
+                    <input class="form-submit" type="submit" value="Apply Filters">
+
+                  </form>
+            </div>
+            <h2 class="center">Cars &amp; Trucks &mdash; Latest Listings</h2>
+            <div class="main-gallery">
+                <div class="container">
+                    <div class="mySlides1">
+                        <div class="numbertext">1 / 5</div>
+                        <a href="cars1.html"><img src="images/cars2.1.jpg" alt="cars demo image"></a>
+                    </div>
+
+                    <div class="mySlides1">
+                        <div class="numbertext">2 / 5</div>
+                        <a href="cars1.html"><img src="images/cars2.2.jpg" alt="cars demo image"></a>
+                    </div>
+
+                    <div class="mySlides1">
+                        <div class="numbertext">3 / 5</div>
+                        <a href="cars1.html"><img src="images/cars2.3.jpg" alt="cars demo image"></a>
+                    </div>
+
+                    <div class="mySlides1">
+                        <div class="numbertext">4 / 5</div>
+                        <a href="cars1.html"><img src="images/cars2.4.jpg" alt="cars demo image"></a>
+                    </div>
+
+                    <div class="mySlides1">
+                        <div class="numbertext">5 / 5</div>
+                        <a href="cars1.html"><img src="images/cars2.5.jpg" alt="cars demo image"></a>
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 0)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 0)">&#10095;</button>
+
+                    <div class="caption-container"><a href="cars1.html"><p>$43,892 || 2014 Chevrolet Corvette Stingray</p></a></div>
+                </div>
+                <div class="container ">
+
+                    <div class="mySlides2">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="images/cars1.1.jpg" alt="car demo image">
+                    </div>
+
+                    <div class="mySlides2">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="images/cars1.2.jpg" alt="car demo image">
+                    </div>
+
+                    <div class="mySlides2">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="images/cars1.3.jpg" alt="car demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 1)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 1)">&#10095;</button>
+
+                    <div class="caption-container"><p>$3,900 || 2003 Toyota Corolla</p></div>
+                </div>
+
+                <div class="container">
+                    <div class="mySlides3">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="images/cars3.1.jpg" alt="cars demo image">
+                    </div>
+
+                    <div class="mySlides3">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="images/cars3.2.jpg" alt="cars demo image">
+                    </div>
+
+                    <div class="mySlides3">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="images/cars3.3.jpg" alt="cars demo image">
+                    </div>
+
+                    <div class="mySlides3">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="images/cars3.4.jpg" alt="cars demo image">
+                    </div>
+
+                    <div class="mySlides3">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="images/cars3.5.jpg" alt="cars demo image">
+                    </div>
+
+                    <div class="mySlides3">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="images/cars3.6.jpg" alt="cars demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 2)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 2)">&#10095;</button>
+
+                    <div class="caption-container"><p>$34,435 || 2017 Ford Mustang GT Convertable</p></div>
+                </div>
+                
+                
+                <div class="container">
+                    <div class="mySlides4">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="images/cars4.1.jpg" alt="cars demo image">
+                    </div>
+
+                    <div class="mySlides4">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="images/cars4.2.jpg" alt="cars demo image">
+                    </div>
+
+                    <div class="mySlides4">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="images/cars4.3.jpg" alt="cars demo image">
+                    </div>
+
+                    <div class="mySlides4">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="images/cars4.4.jpg" alt="cars demo image">
+                    </div>
+
+                    <div class="mySlides4">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="images/cars4.5.jpg" alt="cars demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 3)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 3)">&#10095;</button>
+
+                    <div class="caption-container"><p>$24,990 || 2014 Mercedes-Benz E-550 Sedan</p></div>
+                </div>
+
+                <div class="container">
+                    <div class="mySlides5">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="images/cars5.1.jpg" alt="cars demo image">
+                    </div>
+
+                    <div class="mySlides5">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="images/cars5.2.jpg" alt="cars demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 4)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 4)">&#10095;</button>
+
+                    <div class="caption-container"><p>$4,000 || Jeep Cherokee</p></div>
+                </div>
+
+                <div class="container">
+                    <div class="mySlides6">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="images/cars6.1.jpg" alt="cars demo image">
+                    </div>
+
+                    <div class="mySlides6">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="cars/home6.2.jpg" alt="cars demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 5)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 5)">&#10095;</button>
+
+                    <div class="caption-container"><p>$14,250 || 2008 Jeep Wrangler</p></div>
+                </div>
+
+                <div class="container">
+                    <div class="mySlides7">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="images/cars7.1.jpg" alt="cars demo image">
+                    </div>
+
+                    <div class="mySlides7">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="images/cars7.2.jpg" alt="cars demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 6)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 6)">&#10095;</button>
+
+                    <div class="caption-container"><p>$6,495 || 2012 Volkswagen Passat SEL</p></div>
+                </div>
+
+                <div class="container">
+                    <div class="mySlides8">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="images/cars8.1.jpg" alt="cars demo image">
+                    </div>
+
+                    <div class="mySlides8">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="images/cars8.2.jpg" alt="cars demo image">
+                    </div>
+
+                    <div class="mySlides8">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="images/cars8.3.jpg" alt="cars demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 7)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 7)">&#10095;</button>
+
+                    <div class="caption-container"><p>$10,500 || 2012 Ford F-150 Super Cab</p></div>
+                </div>
+
+                <div class="container">
+                    <div class="mySlides9">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="images/cars9.1.jpg" alt="cars demo image">
+                    </div>
+
+                    <div class="mySlides9">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="images/cars9.2.jpg" alt="cars demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 8)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 8)">&#10095;</button>
+
+                    <div class="caption-container"><p>$12,990 || 2014 Ford CMAX Hybrid SE</p></div>
+                </div>
+
+                <div class="container">
+                    <div class="mySlides10">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="images/cars10.1.jpg" alt="cars demo image">
+                    </div>
+
+                    <div class="mySlides10">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="images/cars10.2.jpg" alt="cars demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 9)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 9)">&#10095;</button>
+
+                    <div class="caption-container"><p>$6,988 || 2011 Chevrolet Equinox LTZ</p></div>
+                </div>
+
+                <div class="container">
+                    <div class="mySlides11">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="images/cars11.1.jpg" alt="cars demo image">
+                    </div>
+
+                    <div class="mySlides11">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="images/cars11.2.jpg" alt="cars demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 10)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 10)">&#10095;</button>
+
+                    <div class="caption-container"><p>$5,900 || 2006 Mercedes E-350</p></div>
+                </div>
+
+                <div class="container">
+                    <div class="mySlides12">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="images/cars12.1.jpg" alt="cars demo image">
+                    </div>
+
+                    <div class="mySlides12">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="images/cars12.2.jpg" alt="cars demo image">
+                    </div>
+        
+                    <button class="prev" onclick="plusDivs(-1, 11)">&#10094;</button>
+                    <button class="next" onclick="plusDivs(1, 11)">&#10095;</button>
+
+                    <div class="caption-container"><p>$9,995 || 2013 Mazda CX-5 Touring</p></div>
+                </div>
+
+            </div>
+            
+        </main>
+
+        <footer>
+            <p>&copy; 2020 Craigslist</p>
+            <ul>
+                <li><a href="#">help</a></li>
+                <li><a href="#">safety</a></li>
+                <li><a href="#">privacy</a></li>
+                <li><a href="#">terms</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">mobile</a></li>
+            </ul>
+        </footer>
+
+        <script>
+            function myFunction() {
+              var a = document.getElementById("myTopnav");
+              if (a.className === "topnav") {
+                a.className += " responsive";
+              } else {
+                a.className = "topnav";
+              }
+            }
+
+
+            var slideIndex = [1,1,1,1,1,1,1,1,1,1,1,1];
+            var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8",
+            "mySlides9", "mySlides10", "mySlides11", "mySlides12"];
+            showDivs(1, 0);
+            showDivs(1, 1);
+            showDivs(1, 2);
+            showDivs(1, 3);
+            showDivs(1, 4);
+            showDivs(1, 5);
+            showDivs(1, 6);
+            showDivs(1, 7);
+            showDivs(1, 8);
+            showDivs(1, 9);
+            showDivs(1, 10);
+            showDivs(1, 11);
+
+            function plusDivs(n, no) {
+                showDivs(slideIndex[no] += n, no);
+            }
+
+            function showDivs(n, no) {
+                var i;
+                var x = document.getElementsByClassName(slideId[no]);
+                if (n > x.length) {slideIndex[no] = 1}
+                if (n < 1) {slideIndex[no] = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                x[slideIndex[no]-1].style.display = "block";  
+            }
+            </script>
+    </body>
+</html>
