@@ -178,8 +178,8 @@ footer .fab {
 }
 
 /* Add a hover effect if you want */
-footer .fa:hover { 
-  opacity: 0.7; 
+footer .fab:hover { 
+  opacity: 0.6; 
 }
 
 /* Set a specific color for each brand */
@@ -187,38 +187,38 @@ footer .fa:hover {
 /* Facebook */
 footer .fa-facebook-f { 
   background: #3B5998;
-border-radius: 15px;
+  border-radius: 15px;
   color: #FFFFFF; 
 }
 
 /* Twitter */
 footer .fa-twitter { 
   background: #55ACEE;
-border-radius: 15px;
+  border-radius: 15px;
   color: #FFFFFF;
 }
       
 footer .fa-instagram { 
   background: #E1306C;
-border-radius: 15px;
+  border-radius: 15px;
   color: #FFFFFF; 
 }
       
 footer .fa-youtube { 
   background: #C4302B;
-border-radius: 15px;
+  border-radius: 15px;
   color: #FFFFFF; 
 }
       
 footer .fa-soundcloud { 
   background: #FF7700;
-border-radius: 15px;
+  border-radius: 15px;
   color: #FFFFFF; 
 }
        
 footer .fa-linkedin-in { 
   background: #0E76A8;
-border-radius: 15px;
+  border-radius: 15px;
   color: #FFFFFF; 
 }
 .border {
