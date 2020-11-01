@@ -1,396 +1,292 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>EUBIT | Some text to be added</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale-1">
-        <link rel="stylesheet" href="../css/style1.css">
-        <link rel="stylesheet" href= 
-            "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" type="image/png" href="../images/logo.png" />
-    </head>
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EUBIT | Home</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" 
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image/png" href="images/logo.png">
+  </head>
+  <body>
+    <header>  
+        <div class="custom-top grid-x grid-padding-x bd-black">
+          <div class="small-4 medium-2 large-1 cell">
+            <a href="index.html"><img class="logo" src="images/logo.jpeg" alt="Logo"/> 
+              <strong class="hide-for-medium"> EUBIT</strong></a>
+          </div>
 
-    <body>
-        <header class="home-header">
-            <a href="index.html"><img src="../images/logo.jpeg" alt="Logo"/></a>
-            <a href="index.html"><h1 class="desktop">EUBIT</h1></a>
-            <div class="desktop">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="learn.html">Learn</a></li>
-                    <li><a href="link4.html">Testing_the_Link_Length</a>
-                    <li><a href="link5.html">Link 5</a></li>
-                </ul>
-            </div>
-            <input class="nav-btn" type="checkbox" id="toggle">
-            <label for="toggle">&#9776;</label>
-            <input class="sign-in-btn" type="checkbox" id="sign-in">
-            <label for="sign-in"><i class="fa fa-user-circle" aria-hidden="true" style="font-size: 22px;"></i></label>
-            <input class="lang-btn" type="checkbox" id="language">
-            <label for="language"><i class="fa fa-language" aria-hidden="true" style="font-size: 22px;"></i></label>
-            <input class="search-btn" type="checkbox" id="search">
-            <label for="search"><i class="fa fa-search" style="font-size: 22px;"></i></label>
-
-            <nav>
-                <div class="search">           
-                    <form action="#"> 
-                        <input type="text" placeholder=" Search Network" name="search"> 
-                        <button> 
-                            <i class="fa fa-search"
-                                style="font-size: 18px;"> 
-                            </i> 
-                        </button> 
-                    </form> 
-                </div>
-                <ul id="menu_list">
-                    <li><a href="index.html">Home</a>
-                        <ul class="desktop">
-                            <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="about.html">About</a>
-                        <ul class="desktop">
-                            <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="learn.html">Learn</a>
-                        <ul class="desktop">
-                            <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="link4.html">Testing_the_Link_Length</a>
-                        <ul class="desktop">
-                            <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="link5.html">Link 5</a>
-                        <ul class="desktop">
-                            <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <div class="search-window">  
-                <h3>Some Info about search</h3>       
-                <form action="#"> 
-                    <input type="text" placeholder=" Search Network" name="search"> 
-                    <button> 
-                        <i class="fa fa-search"
-                            style="font-size: 18px;"> 
-                        </i> 
-                    </button> 
-                </form> 
-                <h3><br><br><br>Some info about search</h3>
-            </div>
-            <div class="lang-window">  
-                <br><br>
-                <form class="lang-form" action="/action_page.php">
-                    <select id="lang-menu" name="lang-menu">
-                      <option value="null">Select a Language. . .</option>
-                      <option value="english">English</option>
-                      <option value="arabic">عربى</option>
-                      <option value="chinese">中文</option>
-                      <option value="french">Français</option>
-                      <option value="german">Deutsche</option>
-                      <option value="italian">Italiano</option>
-                      <option value="japanese">日本語</option>
-                      <option value="korean">韓国語</option>
-                      <option value="portugese">Português</option>
-                      <option value="russian">Pусский</option>
-                      <option value="spanish">Español</option>
-                      <option value="turkish">Türk</option>
-                    </select>
-                    <input type="submit" id="lang-submit">
-                  </form>
-                <br><br>
-            </div>
-
-            <div class="sign-in-form">
-                <br><br>
-                <ul class="tab-group">
-                    <li class="tab active"><a href="#signup">Sign Up</a></li>
-                    <li class="tab"><a href="#login">Log In</a></li>
-                </ul>
-                <div class="tab-content">
-                  <div id="signup">   
-                    <h1>Sign Up for Free</h1>
-                    
-                    <form action="/" method="post">
-                    
-                    <div class="field-wrap">
-                        <label>
-                            First Name<span class="req">*</span>
-                        </label>
-                        <input type="text" placeholder=" First Name" required autocomplete="off" />
-                    </div>
-                  
-                    <div class="field-wrap">
-                        <label>
-                            Last Name<span class="req">*</span>
-                        </label>
-                        <input type="text" placeholder=" Last Name" required autocomplete="off"/>
-                    </div>
-          
-                    <div class="field-wrap">
-                      <label>
-                        Email Address<span class="req">*</span>
-                      </label>
-                      <input type="email" placeholder=" Email Address" required autocomplete="off"/>
-                    </div>
-                    
-                    <div class="field-wrap">
-                      <label>
-                        Set A Password<span class="req">*</span>
-                      </label>
-                      <input type="password" placeholder=" New Password" required autocomplete="off"/>
-                    </div>
-                    
-                    <button type="submit" class="button button-block">SUBMIT</button>
-                    <br>
-                    
-                    </form>
-          
-                  </div>
-                  
-                  <div id="login">   
-                    <h1>Welcome Back!</h1>
-                    
-                    <form action="/" method="post">
-                    
-                      <div class="field-wrap">
-                      <label>
-                        Email Address<span class="req">*</span>
-                      </label>
-                      <input type="email" required autocomplete="off"/>
-                    </div>
-                    
-                    <div class="field-wrap">
-                      <label>
-                        Password<span class="req">*</span>
-                      </label>
-                      <input type="password" required autocomplete="off"/>
-                    </div>
-                    
-                    <p class="forgot"><a href="#">Forgot Password?</a></p>
-                    
-                    <button class="button button-block">Log In</button>
-                    
-                    </form>
-          
-                  </div>
-                  
-                </div><!-- tab-content -->
-                
-          </div> <!-- /form -->
-
-        </header>
-        <main>
-            <h1>About Eubit</h1>
-            <br>
-            <section class="grid">
-		        <div class="left">
-    			    <h3>Page Index</h3>
-	    		    <ul>
-		    		    <li><a href="#origin">Origin Story</a></li>
-			    	    <li><a href="#mission">Our Mission</a></li>
-    			    	<li><a href="#motto">Our Motto</a></li>
-                        <li><a href="#team">Team Members</a></li>
-                        <li><a href="#next">Next Section</a></li>
-	    	    	</ul>
-		        </div>
-	    	    <div class="right">
-                    <div id="origin"></div><br><br><br><br>
-		    	    <h2>Origin Story:</h2>
-			    	    <p>&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quo fuga vitae quibusdam
-                            illo temporibus eius cupiditate rerum doloremque commodi sunt alias, non autem 
-                            numquam magnam porro. Aperiam praesentium quasi suscipit itaque voluptatem iste 
-                            natus ullam et nam laudantium, nisi aliquid inventore earum commodi voluptate modi 
-                            in neque magnam eligendi rerum doloremque saepe? Incidunt iusto, animi molestias 
-                            fuga sapiente deserunt autem ab quo quia recusandae quasi voluptate aspernatur 
-                            magni fugiat atque totam odio a similique aut facilis illo in? Molestias alias 
-                            nihil perferendis optio libero sapiente esse error? Voluptatibus dicta fugiat 
-                            ratione laudantium nihil quo non voluptate, reprehenderit nostrum quisquam?</p>
-    	    		<hr id="mission">
-	    	    	<h2>Our Mission:</h2>
-		    	    	<p>&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quo fuga vitae quibusdam
-                            illo temporibus eius cupiditate rerum doloremque commodi sunt alias, non autem 
-                            numquam magnam porro. Aperiam praesentium quasi suscipit itaque voluptatem iste 
-                            natus ullam et nam laudantium, nisi aliquid inventore earum commodi voluptate modi 
-                            in neque magnam eligendi rerum doloremque saepe? Incidunt iusto, animi molestias 
-                            fuga sapiente deserunt autem ab quo quia recusandae quasi voluptate aspernatur 
-                            magni fugiat atque totam odio a similique aut facilis illo in? Molestias alias 
-                            nihil perferendis optio libero sapiente esse error? Voluptatibus dicta fugiat 
-                            ratione laudantium nihil quo non voluptate, reprehenderit nostrum quisquam?</p>
-    			    <hr id="motto">
-    	    		<img src="../images/motto.png" alt="motto" class="motto">
-	    	    	<h2>Our Motto:</h2>
-		    	    	<p>"Ex Cinere, Nos Resurgemus", or "Out of the ashes, We shall rise".<br><br>
-			    	        &emsp;Which means we, as an individual or society, will emerge as new from something that has
-				            been destroyed. This expression alludes to the legendary phoenix, which is a
-				            bird that supposedly rose from the ashes of its funeral pyre with renewed youth.</p><br><br>
-    			    <hr id="team">
-                    <h2>Team Members</h2>
-                    <div class="gallery-wrap">
-                        <div class="gallery">
-                            <a target="_blank" href="../images/hamad.jpg">
-                                <img src="../images/hamad.jpg" alt="Hamad Hamdi photo">
-                            </a>
-                            <div class="desc"><h4>Hamad Hamdi</h4>
-                                <p>Founder &amp; CEO</p>
-                            </div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="../images/hedy.jpg">
-                                <img src="../images/hedy.jpg" alt="Hedy Lamarr photo">
-                            </a>
-                            <div class="desc"><h4>Hedy Lamarr</h4>
-                                <p>Chief Operating Officer</p>
-                            </div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="../images/yang.jpg">
-                                <img src="../images/yang.jpg" alt="Andrew Yang photo">
-                            </a>
-                            <div class="desc"><h4>Andrew Yang</h4>
-                                <p>Comms Manager</p>
-                            </div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="../images/tony.jpg">
-                                <img src="../images/tony.jpg" alt="Tony Stark photo">
-                            </a>
-                            <div class="desc"><h4>Tony Stark</h4>
-                                <p>Network Designer</p>
-                            </div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="../images/einstein.jpg">
-                                <img src="../images/einstein.jpg" alt="Albert Einstein photo">
-                            </a>
-                            <div class="desc"><h4>Albert Einstein</h4>
-                                <p>System Analyst</p>
-                            </div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="../images/johnson.jpg">
-                                <img src="../images/johnson.jpg" alt="Katherine Johnson photo">
-                            </a>
-                            <div class="desc"><h4>Katherine Johnson</h4>
-                                <p>Chief Financial Officer</p>
-                            </div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="../images/rutger.jpg">
-                                <img src="../images/rutger.jpg" alt="Rutger Bregman photo">
-                            </a>
-                            <div class="desc"><h4>Rutger Bregman</h4>
-                                <p>SVP Marketing</p>
-                            </div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="../images/neo.jpg">
-                                <img src="../images/neo.jpg" alt="Neo photo">
-                            </a>
-                            <div class="desc"><h4>NEO</h4>
-                                <p>Matrix Designer</p>
-                            </div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="../images/ada.jpg">
-                                <img src="../images/ada.jpg" alt="Ada Lovelace photo">
-                            </a>
-                            <div class="desc"><h4>Ada Lovelace</h4>
-                                <p>Software Engineer</p>
-                            </div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="../images/newton.jpg">
-                                <img src="../images/newton.jpg" alt="Isaac Newton photo">
-                            </a>
-                            <div class="desc"><h4>Sir Isaac Newton</h4>
-                                <p>DevOps Engineer</p>
-                            </div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="../images/neil.jpg">
-                                <img src="../images/neil.jpg" alt="Neil deGrasse Tyson photo">
-                            </a>
-                            <div class="desc"><h4>Neil deGrasse Tyson</h4>
-                                <p>Social Media Coordinator</p>
-                            </div>
-                        </div>   
-                        <div class="gallery">
-                            <a target="_blank" href="../images/tesla.jpg">
-                                <img src="../images/tesla.jpg" alt="Nikola Tesla photo">
-                            </a>
-                            <div class="desc"><h4>Nikola Tesla</h4>
-                                <p>Electrical Consultant</p>
-                            </div>
-                        </div>
-                    </div>
-                    <hr id="next">
-                    <h2 class="clear">Next Section</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quo fuga vitae quibusdam
-                            illo temporibus eius cupiditate rerum doloremque commodi sunt alias, non autem 
-                            numquam magnam porro. Aperiam praesentium quasi suscipit itaque voluptatem iste 
-                            natus ullam et nam laudantium, nisi aliquid inventore earum commodi voluptate modi 
-                            in neque magnam eligendi rerum doloremque saepe? Incidunt iusto, animi molestias 
-                            fuga sapiente deserunt autem ab quo quia recusandae quasi voluptate aspernatur 
-                            magni fugiat atque totam odio a similique aut facilis illo in? Molestias alias 
-                            nihil perferendis optio libero sapiente esse error? Voluptatibus dicta fugiat 
-                            ratione laudantium nihil quo non voluptate, reprehenderit nostrum quisquam?</p>
-                </div>
-            </section>
-        </main>
-
-        <footer class="home-footer">
-            <div class="row">
-                <div class="column">
-                    <h3>Website</h3>
-                    <ul>
-                        <li><a href="construction.html">Accessibilty</a></li>
-                        <li><a href="construction.html">Digital Accessibilty</a></li>
-                        <li><a href="sitemap.html">Site Map</a></li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h3>Learn More</h3>
-                    <ul>
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h3>Connect</h3>
-                    <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Career</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <ul id="media-buttons">
-                <li><a href="#" class="fa fa-facebook"></a></li>
-                <li><a href="#" class="fa fa-twitter"></a></li>
-                <li><a href="#" class="fa fa-instagram"></a></li>
-                <li><a href="#" class="fa fa-youtube"></a></li>
-                <li><a href="#" class="fa fa-soundcloud"></a></li>
-                <li><a href="#" class="fa fa-linkedin"></a></li>
+          <div class="show-for-medium medium-8 large-6 cell">
+            <ul class="no-bullet horizontal menu expanded menu-hover-lines">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="learn.html">Learn</a></li>
+              <li><a href="link4.html">Link 4</a></li>
+              <li><a href="link5.html">Link 5</a></li>
             </ul>
-            <p>&copy; EUBIT Project 2020 Released under the Phoenix Corp. License</p>
-        </footer>
-    </body>
+          </div>
+          <div class="small-8 medium-2 large-5 nav-icon">
+            <button class="fas fa-bars light nav-icon hide-for-medium" data-open="nav-menu"></button>
+            <a href="login.html"><i class="fas fa-user light nav-icon"></i></a>
+            <button class="lang-select-button fa fa-language light nav-icon" data-open="lang-select"></button>
+            <div class="input-group input-group-rounded search show-for-large float-right">
+              <input class="input-group-field" type="search" placeholder="Search the Network . . .">
+              <div class="input-group-button">
+                <input type="submit" class="button secondary material-icons" value="&#xe8b6;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="reveal bd-black" id="nav-menu" aria-labelledby="nav-menu-header" data-reveal>
+            <ul class="no-bullet vertical menu align-center menu-hover-lines">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="learn.html">Learn</a></li>
+              <li><a href="link4.html">Link 4</a></li>
+              <li><a href="link5.html">Link 5</a></li>
+            </ul><br>
+            <div class="input-group input-group-rounded search center">
+              <input class="input-group-field" type="search" placeholder="Search the Network . . .">
+              <div class="input-group-button">
+                <input type="submit" class="button secondary material-icons" value="&#xe8b6;">
+              </div>
+            </div>
+            <button class="close-button" data-close aria-label="Close Accessible Modal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+      <div class="reveal bd-black" id="lang-select" aria-labelledby="lang-select-header" data-reveal>
+        <form class="bd-black">
+          <label>Select Language
+            <select>
+              <option value="null">Select a Language. . .</option>
+              <option value="english">English</option>
+              <option value="arabic">عربى</option>
+              <option value="chinese">中文</option>
+              <option value="french">Français</option>
+              <option value="german">Deutsche</option>
+              <option value="italian">Italiano</option>
+              <option value="japanese">日本語</option>
+              <option value="korean">韓国語</option>
+              <option value="portugese">Português</option>
+              <option value="russian">Pусский</option>
+              <option value="spanish">Español</option>
+              <option value="turkish">Türk</option>
+            </select>
+          </label>
+        </form>
+        <button class="close-button" data-close aria-label="Close Accessible Modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </header>
+    <main class="grid-container fluid bd-black light">
+      <h1 class="text-center" id="origin">About Eubit</h1>  
+      <div class="grid-x">
+        <div class="index medium-3 large-2 cell">
+          <h4>Page Index</h4>
+          <ul>
+            <li><a href="#origin">Origin Story</a></li>
+            <li><a href="#mission">Our Mission</a></li>
+            <li><a href="#motto">Our Motto</a></li>
+            <li><a href="#team">Team Members</a></li>
+            <li><a href="#next">Next Section</a></li>
+          </ul>
+        </div>
+        <div class="medium-offset-3 medium-9 large-offset-2 large-10 cell">
+          <div>
+            <h2>Origin Story:</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptates sapiente officia placeat vel! Soluta ab sequi hic beatae, voluptate dolores mollitia odit atque! Itaque perferendis possimus eligendi velit praesentium sint, quasi officia, inventore adipisci est consequatur provident amet corporis autem. Laboriosam est quasi eaque magnam error beatae blanditiis nostrum alias, soluta quisquam architecto libero possimus! Eum dolore exercitationem minus ducimus earum deleniti ipsam totam cupiditate hic nesciunt neque natus, qui dolorum officia architecto quos officiis corporis optio dolores quis vitae modi sapiente. Perspiciatis facilis doloremque unde sequi quia dignissimos cumque nihil accusamus pariatur nisi. Reiciendis quo corporis error est!</p>
+          <div class="space" id="mission"></div>
+          </div>
+          <div>
+            <h2>Our Mission:</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia reiciendis quas architecto dolores molestias enim accusantium praesentium culpa fuga commodi adipisci veniam laborum eos repudiandae optio similique dignissimos accusamus magni voluptates, magnam animi, ipsam, aperiam dolorem! Aliquam veritatis explicabo deleniti distinctio, quae facilis placeat officia ullam. Labore optio totam harum quia molestiae vero praesentium, sequi, consequatur accusamus eveniet pariatur ducimus aspernatur! Obcaecati repellendus numquam culpa iusto, quod aliquid id, quia perspiciatis porro sit neque accusantium dolores, maxime mollitia rem minus voluptatum. Quo autem totam voluptatum in aliquid maiores porro fugiat cumque recusandae consectetur sunt, qui illo, ex unde eos?</p>
+            <div class="space" id="motto"></div>
+          </div>
+          <div>
+            <h2>Philosophy &amp; Motto:</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eum minus alias accusantium temporibus quaerat repudiandae debitis inventore cum! Molestias impedit nam nulla minima harum voluptatum, optio ab magni provident obcaecati deserunt repellat numquam rem nisi placeat quos dolorem pariatur? Voluptatem ratione temporibus tenetur architecto minus eaque, cumque voluptatum eos, sint dolor assumenda dolorem, voluptate exercitationem iste suscipit modi obcaecati quaerat qui? Ducimus, iste cupiditate? Nihil, magnam? Molestiae dolore asperiores repudiandae temporibus, voluptatum, sapiente ipsa consequuntur delectus nulla sit culpa adipisci est sunt laborum cupiditate reiciendis quisquam voluptas nobis debitis maiores impedit atque magni. Blanditiis expedita amet perspiciatis praesentium officia.</p>
+            <div class="space" id="team"></div>
+          </div>
+          <h2>Our Team:</h2>
+          <div class="grid-x grid-margin-x grid-margin-y">
+            <div class="small-6 medium-4 large-3 cell">
+              <div class="card">
+                <img src="images/hamad.jpg">
+                <div class="card-section">
+                  <h5>Hamad Hamdi</h5>
+                  <p>Founder &amp; CEO</p>
+                </div>
+              </div>
+            </div>
+            <div class="small-6 medium-4 large-3 cell">
+              <div class="card">
+                <img src="images/hedy.jpg">
+                <div class="card-section">
+                  <h5>Hedy Lamarr</h5>
+                  <p>Chief Operating Officer</p>
+                </div>
+              </div>
+            </div>
+            <div class="small-6 medium-4 large-3 cell">
+              <div class="card">
+                <img src="images/yang.jpg">
+                <div class="card-section">
+                  <h5>Andrew Yang</h5>
+                  <p>Communications Manager</p>
+                </div>
+              </div>
+            </div>
+            <div class="small-6 medium-4 large-3 cell">
+              <div class="card">
+                <img src="images/tony.jpg">
+                <div class="card-section">
+                  <h5>Tony Stark</h5>
+                  <p>Network Security</p>
+                </div>
+              </div>
+            </div>
+            <div class="small-6 medium-4 large-3 cell">
+              <div class="card">
+                <img src="images/einstein.jpg">
+                <div class="card-section">
+                  <h5>Albert Einstein</h5>
+                  <p>System Analyst</p>
+                </div>
+              </div>
+            </div>
+            <div class="small-6 medium-4 large-3 cell">
+              <div class="card">
+                <img src="images/johnson.jpg">
+                <div class="card-section">
+                  <h5>Katherine Johnson</h5>
+                  <p>Chief Financial Officer</p>
+                </div>
+              </div>
+            </div>
+            <div class="small-6 medium-4 large-3 cell">
+              <div class="card">
+                <img src="images/rutger.jpg">
+                <div class="card-section">
+                  <h5>Rutger Bregman</h5>
+                  <p>SVP Marketing</p>
+                </div>
+              </div>
+            </div>
+            <div class="small-6 medium-4 large-3 cell">
+              <div class="card">
+                <img src="images/neo.jpg">
+                <div class="card-section">
+                  <h5>NEO</h5>
+                  <p>Matrix Designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="small-6 medium-4 large-3 cell">
+              <div class="card">
+                <img src="images/ada.jpg">
+                <div class="card-section">
+                  <h5>Ada Lovelace</h5>
+                  <p>Software Engineer</p>
+                </div>
+              </div>
+            </div>
+            <div class="small-6 medium-4 large-3 cell">
+              <div class="card">
+                <img src="images/newton.jpg">
+                <div class="card-section">
+                  <h5>Sir Isaac Newton</h5>
+                  <p>DevOps Engineer</p>
+                </div>
+              </div>
+            </div>
+            <div class="small-6 medium-4 large-3 cell">
+              <div class="card">
+                <img src="images/neil.jpg">
+                <div class="card-section">
+                  <h5>Neil deGrasse Tyson</h5>
+                  <p>Social Media Coordinator</p>
+                </div>
+              </div>
+            </div>
+            <div class="small-6 medium-4 large-3 cell">
+              <div class="card">
+                <img src="images/tesla.jpg">
+                <div class="card-section">
+                  <h5>Nikola Tesla</h5>
+                  <p>Network Designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="space" id="next"></div>
+          </div>
+          <div>
+            <h2>Next Section:</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, repellendus officia! Porro necessitatibus, corrupti deserunt ut ad et velit animi doloribus minus. Blanditiis excepturi quod laboriosam quaerat explicabo reprehenderit recusandae enim quo accusantium similique repellendus laudantium ipsam unde ad porro nisi ipsa vel maxime, amet eveniet eligendi exercitationem? Magnam blanditiis reprehenderit sint quos ratione pariatur nisi molestiae adipisci optio, nihil voluptas inventore fugiat, sed vel. Adipisci est laboriosam saepe sed nisi nam eius voluptates ipsum placeat quisquam nihil molestias, consectetur excepturi accusamus necessitatibus tempore fugit omnis neque eveniet magnam! Aspernatur atque corrupti laboriosam iure reiciendis, perspiciatis mollitia. Dolorum, asperiores aperiam.</p>
+          </div>
+        </div>
+      </div>
+      <div class="space"></div>
+    </main>
+    <footer class="grid-container fluid bd-black light">
+      <div class="grid-x grid-padding-x">
+        <div class="small-4 cell text-center">
+          <h3>Website</h3>
+          <ul class="no-bullet">
+            <li><a href="construction.html">Digital Accessibilty</a></li>
+            <li><a href="sitemap.html">Site Map</a></li>
+          </ul>
+        </div>
+        <div class="small-4 cell text-center">
+          <h3>Learn More</h3>
+          <ul class="no-bullet">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </div>
+        <div class="small-4 cell text-center">
+          <h3>Connect</h3>
+          <ul class="no-bullet">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Team</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid-x grid-padding-x">
+        <div class="medium-9 medium-offset-3 large-offset-6 large-6 cell">
+          <ul class="light social-icons menu horizontal no-bullet expanded row">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-soundcloud"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+          <p>&copy; EUBIT Project 2020 Released under the Phoenix Corp. License</p>
+      </div>
+    </footer>
+
+</div>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+<script>
+    $(document).ready(function() {
+       $(document).foundation();
+    })
+
+    var elem = new Foundation.ResponsiveToggle(element, options);
+ </script>
+</body>
 </html>
