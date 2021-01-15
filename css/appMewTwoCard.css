@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  transform-style: preserve-3d;
+  height: 96vh;
+  width: 26rem;
+  background-image: url(../images/mewtwoblankPokemonCard.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  padding: 0 1.8rem;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.title {
+  display: flex;
+  padding: 1.8rem 0 0 6rem;
+  transition: all 0.75s ease-out;
+  justify-content: space-between;
+  text-shadow: 0px 10px 10px #000000;
+}
+.title img {
+  width: 1.5rem;
+  float: right;
+}
+.right {
+  align-items: right;
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+.pokemon {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pokemon img {
+  width: 12rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+.info {
+  font-size: 1rem;
+  text-shadow: 0px 10px 10px #000000;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+.row {
+  display: table;
+  width: 100%; /*Optional*/
+  table-layout: fixed; /*Optional*/
+}
+.column {
+  display: table-cell;
+}
+.info p { 
+  font-size: 0.8rem;
+}
+.info img {
+  width: 1.5rem;
+}
+.bottom {
+  padding: 3rem 0 0 2.5rem;
+  text-shadow: 0px 10px 10px #000000;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+.bottom img {
+  width: 1.4rem;
+}
