@@ -1,0 +1,47 @@
+.backgroundImg {
+    background-color: rgba(153,235,255,1);
+    background-image: url("../images/cubicle1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+}
+.eatMeImg {
+    background-color: rgba(0,0,0,1);
+    background-image: url("../images/eatMe.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: fixed;
+}
+.drinkMeImg {
+    background-color: rgba(0,0,0,1);
+    background-image: url("../images/drinkMe.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: fixed;
+}
+.space {
+    padding: 50px;
+}
+.space3 {
+    padding: 150px;
+}
+.eatMe {
+    height: 180px;
+    width: 180px;
+    background-image: url("../images/eatMe.png");
+    background-size: cover;
+}
+.drinkMe {
+    height: 180px;
+    width: 180px;
+    background-image: url("../images/drinkMe1.png");
+    background-size: cover;
+}
+.eatMe:hover {
+    height: 180px;
+    width: 200px;
+}
+.drinkMe:hover {
+    height: 180px;
+    width: 200px;
+}

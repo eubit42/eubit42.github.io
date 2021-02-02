@@ -1,6 +1,7 @@
 .no-js .top-bar {
   display: none;
 }
+/* custom header navigation bar config */
 .custom-top {
   position: fixed;
   padding-top: 10px;
@@ -12,6 +13,7 @@
 main {
   padding-top: 100px;
 }
+/* spacing for the site */
 .space {
   padding: 50px;
 }
@@ -21,11 +23,15 @@ main {
 .section {
   padding: 20px;
 }
+/* top image on developers page */
 #dev-top {
   background-image: url("../images/developer.png");
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.news-img {
+  margin: 10px;
 }
 .nav-icon {
   padding: 10px;
@@ -48,6 +54,7 @@ main {
 #nav-menu {
   padding-top: 30px;
 }
+/* sets cards borders and shadows for team members */
 .card {
   border-radius: 10px;
   box-shadow: 5px 5px 15px #b2b2b2;
@@ -58,6 +65,7 @@ a {
 a:hover {
   color: #33AAFF;
 }
+/* sets the background colors accordingly */
 .bd-black {
   background: rgba(0,0,0,1);
   color: rgba(255,255,255,1);
@@ -65,6 +73,7 @@ a:hover {
 .bd-blue {
   background: #3B5998;
 }
+/* creates rounded groups for search bar and other items */
 .input-group {
   height: 2.2rem;
   margin-bottom: 0;
@@ -80,9 +89,11 @@ a:hover {
 .search {
   max-width: 300px;
 }
+/* centers items */
 .center {
   margin: 0 auto;
 }
+/* adds the lines and coloring size for menu items that will be hovered */
 .menu-hover-lines {
   text-align: center;
   text-transform: uppercase;
@@ -130,6 +141,7 @@ a:hover {
 .menu-hover-lines .active a::after {
   width: 100%;
 }
+/* sets the index page background image to rotating world gif */
 .bd-image {
   background-image: url("../images/world.gif");
   display: block;
@@ -139,6 +151,7 @@ a:hover {
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+/* creates the Tron appearance when hovering buttons on home page */
 .btn-home {
   background: none;
   color: #FFFFFF;
@@ -186,6 +199,11 @@ iframe {
 }
 .dev-btn {
   width: 100%;
+  background: #33AAFF;
+  box-shadow: 0 0 15px #b2b2b2;
+}
+.wp-btn {
+  width: 150px;;
   background: #33AAFF;
   box-shadow: 0 0 15px #b2b2b2;
 }
@@ -259,6 +277,7 @@ footer .fa-linkedin-in {
   border-radius: 15px;
   color: #FFFFFF; 
 }
+/* sets the image on the site construction page */
 .construction {
   background-image: url("../images/construction.jpg");
   display: block;
@@ -277,11 +296,13 @@ footer .fa-linkedin-in {
   .no-js .title-bar {
     display: none;
   }
+  /* sets the page index to a fixed position on given screen size */
   .index {
     position: fixed;
   }
 }
 @media screen and (min-width: 64em) {
+  /* minimizes main section to 96% origi */
   main {
     width: 96%;
   }
