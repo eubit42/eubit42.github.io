@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EUBIT | Home</title>
+    <title>Craigslist | For Sale / Cars</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="css/app.css">
@@ -176,104 +176,164 @@
       </button>
     </div>
     <div class="off-canvas-content" data-off-canvas-content>
-        <header class="custom-top bd-purp">
-          <div class="grid-x grid-padding-x">
-            <div class="small-6 cell">
-              <a href="index.html" class="logo-text"><img class="logo" src="images/logo.jpg" alt="Logo"/><strong> Craigslist</strong></a>
-            </div>
-            <div class="small-6 cell">
-              <button class="fas fa-bars light nav-icon hide-for-large" type="button" data-toggle="offCanvas"></button>
-              <a href="login.html"><i class="fas fa-user light nav-icon"></i></a>
-              <button class="lang-select-button fa fa-language light nav-icon" data-open="lang-select"></button>
-              <button class="loc-select-button fas fa-map-marked-alt nav-icon" data-open="loc-select"></button>
-              <button class="search-button fas fa-search nav-icon" data-open="search-select"></button>
+      <header class="custom-top bd-purp">
+        <div class="grid-x grid-padding-x">
+          <div class="small-6 cell">
+            <a href="index.html" class="logo-text"><img class="logo" src="images/logo.jpg" alt="Logo"/><strong> Craigslist</strong></a>
+          </div>
+          <div class="small-6 cell">
+            <button class="fas fa-bars light nav-icon hide-for-large" type="button" data-toggle="offCanvas"></button>
+            <a href="login.html"><i class="fas fa-user light nav-icon"></i></a>
+            <button class="lang-select-button fa fa-language light nav-icon" data-open="language"></button>
+            <button class="loc-select-button fas fa-map-marked-alt nav-icon" data-open="location"></button>
+            <button class="search-button fas fa-search nav-icon" data-open="search"></button>
+          </div>
+        </div>
+        <div class="reveal bd-purp" id="location" data-reveal>
+          <form action="/action_page.php">
+            <select id="loc-menu" name="loc-menu">
+              <option value="null">Select a Location . . .</option>
+              <option value="atlanta-ga">Atlanta, GA</option>
+              <option value="austin-tx">Austin, TX</option>
+              <option value="boston-ma">Boston, MA</option>
+              <option value="chicago-il">Chicago, IL</option>
+              <option value="dallas-tx">Dallas, TX</option>
+              <option value="denver-co">Denver, CO</option>
+              <option value="detroit-mi">Detroit, MI</option>
+              <option value="houston-tx">Houston, TX</option>
+              <option value="las-vegas-nv">Las Vegas, NV</option>
+              <option value="los-angeles-ca">Los Angeles, CA</option>
+              <option value="miami-fl">Miami, FL</option>
+              <option value="minneapolis-mn">Minneapolis, MN</option>
+              <option value="new-york-ny">New York, NY</option>
+              <option value="orange-co-ca">Orange County, CA</option>
+              <option value="philadelphia-pa">Philadelphia, PA</option>
+              <option value="phoenix-az">Phoenix, AZ</option>
+              <option value="portland-wa">Portland, WA</option>
+              <option value="raleigh-nc">Raleigh, NC</option>
+              <option value="sacremento-ca">Sacremento, CA</option>
+              <option value="san-diego-ca">San Diego, CA</option>
+              <option value="seattle-wa">Seattle, WA</option>
+              <option value="sf-ca">San Francisco, CA</option>
+              <option value="wash-dc">Washington DC</option>
+            </select>
+            <input type="submit" id="loc-submit">
+          </form>
+          <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="reveal bd-purp" id="language" data-reveal>
+          <form class="lang-form" action="/action_page.php">
+            <select id="lang-menu" name="lang-menu">
+              <option value="null">Select a Language. . .</option>
+              <option value="english">English</option>
+              <option value="arabic">عربى</option>
+              <option value="chinese">中文</option>
+              <option value="french">Français</option>
+              <option value="german">Deutsche</option>
+              <option value="italian">Italiano</option>
+              <option value="japanese">日本語</option>
+              <option value="korean">韓国語</option>
+              <option value="portugese">Português</option>
+              <option value="russian">Pусский</option>
+              <option value="spanish">Español</option>
+              <option value="turkish">Türk</option>
+            </select>
+            <input type="submit" id="lang-submit">
+          </form>
+          <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="reveal bd-purp" id="search" data-reveal>
+          <div class="input-group input-group-rounded search center">
+            <input class="input-group-field" type="search" placeholder="Search the Network . . .">
+            <div class="input-group-button">
+              <input type="submit" class="button secondary material-icons" value="&#xe8b6;">
             </div>
           </div>
+          <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
           <div class="bd-purp show-for-large">
             <ul class="dropdown menu" data-dropdown-menu>
-              <li><a href="#">Community</a>
+              <li class="grid-x"><a href="#">Community</a>
                 <ul class="menu nav-dropdown-2 bd-purp">
-                  <div class="grid-x">
-                    <div class="cell large-6">
-                      <li><a href="#">Activities</a></li>
-                      <li><a href="#">Artists</a></li>
-                      <li><a href="#">Childcare</a></li>
-                      <li><a href="#">Classes</a></li>
-                      <li><a href="#">Events</a></li>
-                      <li><a href="#">General</a></li>
-                      <li><a href="#">Groups</a></li>
-                      <li><a href="#">Local News</a></li>
-                    </div>
-                    <div class="cell large-6">
-                      <li><a href="#">Lost &amp; Found</a></li>
-                      <li><a href="#">Missed Connections</a></li>
-                      <li><a href="#">Musicians</a></li>
-                      <li><a href="#">Pets</a></li>
-                      <li><a href="#">Politics</a></li>
-                      <li><a href="#">Rants &amp; Raves</a></li>
-                      <li><a href="#">Rideshare</a></li>
-                      <li><a href="#">Volunteers</a></li>
-                    </div>
-                  </div>
+                  <li><a href="#">Activities</a></li>
+                  <li><a href="#">Artists</a></li>
+                  <li><a href="#">Childcare</a></li>
+                  <li><a href="#">Classes</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">General</a></li>
+                  <li><a href="#">Groups</a></li>
+                  <li><a href="#">Local News</a></li>
+                </ul>
+                <ul class="menu col-2">
+                  <li><a href="#">Lost &amp; Found</a></li>
+                  <li><a href="#">Missed Connections</a></li>
+                  <li><a href="#">Musicians</a></li>
+                  <li><a href="#">Pets</a></li>
+                  <li><a href="#">Politics</a></li>
+                  <li><a href="#">Rants &amp; Raves</a></li>
+                  <li><a href="#">Rideshare</a></li>
+                  <li><a href="#">Volunteers</a></li>
                 </ul>
               </li>
               <li><a href="#">For Sale</a>
                 <ul class="menu nav-dropdown-4 bd-purp">
-                  <div class="grid-x">
-                    <div class="cell large-3">
-                      <li><a href="#">Antiques</a></li>
-                      <li><a href="#">Appliances</a></li>
-                      <li><a href="#">Arts &amp; Crafts</a></li>
-                      <li><a href="#">ATV/UTV/SNO</a></li>
-                      <li><a href="#">Auto Parts</a></li>
-                      <li><a href="#">Aviation</a></li>
-                      <li><a href="#">Baby &amp; Kids</a></li>
-                      <li><a href="#">Barter</a></li>
-                      <li><a href="#">Beauty &amp; Health</a></li>
-                      <li><a href="#">Bike Parts</a></li>
-                      <li><a href="#">Bikes</a></li>
-                      <li><a href="#">Boat Parts</a></li>
-                    </div>
-                    <div class="cell large-3">
-                      <li><a href="#">Boats</a></li>
-                      <li><a href="#">Books</a></li>
-                      <li><a href="#">Business</a></li>
-                      <li><a href="cars.html">Cars &amp; Trucks</a></li>
-                      <li><a href="#">CDs/DVD/VHS</a></li>
-                      <li><a href="#">Cell Phones</a></li>
-                      <li><a href="#">Clothes &amp; Access.</a></li>
-                      <li><a href="#">Collectibles</a></li>
-                      <li><a href="#">Computer Parts</a></li>
-                      <li><a href="#">Computers</a></li>
-                      <li><a href="#">Electronics</a></li>
-                    </div>
-                    <div class="cell large-3">
-                      <li><a href="#">Farm &amp; Garden</a></li>
-                      <li><a href="#">Free</a></li>
-                      <li><a href="#">Furniture</a></li>
-                      <li><a href="#">Garage Sale</a></li>
-                      <li><a href="#">General</a></li>
-                      <li><a href="#">Heavy Equip.</a></li>
-                      <li><a href="#">Household</a></li>
-                      <li><a href="#">Jewelry</a></li>
-                      <li><a href="#">Materials</a></li>
-                      <li><a href="#">Motorcycle Parts</a></li>
-                      <li><a href="#">Motorcycles</a></li>
-                    </div>
-                    <div class="cell large-3">
-                      <li><a href="#">Music Instructions</a></li>
-                      <li><a href="#">Photo &amp; Video</a></li>
-                      <li><a href="#">RVs &amp; Camping</a></li>
-                      <li><a href="#">Sporting</a></li>
-                      <li><a href="#">Tickets</a></li>
-                      <li><a href="#">Tools</a></li>
-                      <li><a href="#">Toys &amp; Games</a></li>
-                      <li><a href="#">Trailers</a></li>
-                      <li><a href="#">Video Gaming</a></li>
-                      <li><a href="#">Wanted</a></li>
-                      <li><a href="#">Wheels &amp; Tires</a></li>
-                    </div>
-                  </div>
+                  <li><a href="#">Antiques</a></li>
+                  <li><a href="#">Appliances</a></li>
+                  <li><a href="#">Arts &amp; Crafts</a></li>
+                  <li><a href="#">ATV/UTV/SNO</a></li>
+                  <li><a href="#">Auto Parts</a></li>
+                  <li><a href="#">Aviation</a></li>
+                  <li><a href="#">Baby &amp; Kids</a></li>
+                  <li><a href="#">Barter</a></li>
+                  <li><a href="#">Beauty &amp; Health</a></li>
+                  <li><a href="#">Bike Parts</a></li>
+                  <li><a href="#">Bikes</a></li>
+                  <li><a href="#">Boat Parts</a></li>
+                </ul>
+                <ul class="menu col-2">
+                  <li><a href="#">Boats</a></li>
+                  <li><a href="#">Books</a></li>
+                  <li><a href="#">Business</a></li>
+                  <li><a href="cars.html">Cars &amp; Trucks</a></li>
+                  <li><a href="#">CDs/DVD/VHS</a></li>
+                  <li><a href="#">Cell Phones</a></li>
+                  <li><a href="#">Clothes &amp; Access.</a></li>
+                  <li><a href="#">Collectibles</a></li>
+                  <li><a href="#">Computer Parts</a></li>
+                  <li><a href="#">Computers</a></li>
+                  <li><a href="#">Electronics</a></li>
+                </ul>
+                <ul class="menu col-3">
+                  <li><a href="#">Farm &amp; Garden</a></li>
+                  <li><a href="#">Free</a></li>
+                  <li><a href="#">Furniture</a></li>
+                  <li><a href="#">Garage Sale</a></li>
+                  <li><a href="#">General</a></li>
+                  <li><a href="#">Heavy Equip.</a></li>
+                  <li><a href="#">Household</a></li>
+                  <li><a href="#">Jewelry</a></li>
+                  <li><a href="#">Materials</a></li>
+                  <li><a href="#">Motorcycle Parts</a></li>
+                  <li><a href="#">Motorcycles</a></li>
+                </ul>
+                <ul class="menu col-4">
+                  <li><a href="#">Music Instructions</a></li>
+                  <li><a href="#">Photo &amp; Video</a></li>
+                  <li><a href="#">RVs &amp; Camping</a></li>
+                  <li><a href="#">Sporting</a></li>
+                  <li><a href="#">Tickets</a></li>
+                  <li><a href="#">Tools</a></li>
+                  <li><a href="#">Toys &amp; Games</a></li>
+                  <li><a href="#">Trailers</a></li>
+                  <li><a href="#">Video Gaming</a></li>
+                  <li><a href="#">Wanted</a></li>
+                  <li><a href="#">Wheels &amp; Tires</a></li>
                 </ul>
               </li>
               <li><a href="#">Gigs</a>
@@ -304,75 +364,67 @@
               </li>
               <li><a href="#">Jobs</a>
                 <ul class="menu bd-purp nav-dropdown-3">
-                  <div class="grid-x">
-                    <div class="cell large-4">
-                      <li><a href="#">Accounting &amp; Finance</a></li>
-                      <li><a href="#">Admin / Office</a></li>
-                      <li><a href="#">Arch / Engineering</a></li>
-                      <li><a href="#">Art / Media / Design</a></li>
-                      <li><a href="#">Biotech / Science</a></li>
-                      <li><a href="#">Business / Mngmnt</a></li>
-                      <li><a href="#">Customer Service</a></li>
-                      <li><a href="#">Education</a></li>
-                      <li><a href="#">Etc / Misc</a></li>
-                      <li><a href="#">Food / Bev / Hosp</a></li>
-                      <li><a href="#">General Labor</a></li>
-                    </div>
-                    <div class="cell large-4">
-                      <li><a href="#">Government</a></li>
-                      <li><a href="#">Human Resources</a></li>
-                      <li><a href="#">Legal / Paralegal</a></li>
-                      <li><a href="#">Manufacturing</a></li>
-                      <li><a href="#">Marketing / PR / Ad</a></li>
-                      <li><a href="#">Medical / Health</a></li>
-                      <li><a href="#">Nonprofit Sector</a></li>
-                      <li><a href="#">Real Estate</a></li>
-                      <li><a href="#">Retail / Wholesale</a></li>
-                      <li><a href="#">Sales / Biz Dev</a></li>
-                    </div>
-                    <div class="cell large-4">
-                      <li><a href="#">Salon / Spa / Fitness</a></li>
-                      <li><a href="#">Security</a></li>
-                      <li><a href="#">Skilled Trade / Craft</a></li>
-                      <li><a href="#">Software / QA / DBA</a></li>
-                      <li><a href="#">Systems / Network</a></li>
-                      <li><a href="#">Technical Support</a></li>
-                      <li><a href="#">Transport</a></li>
-                      <li><a href="#">TV / Film / Video</a></li>
-                      <li><a href="#">Web / Info Design</a></li>
-                      <li><a href="#">Writing / Editing</a></li>
-                    </div>
-                  </div>
+                  <li><a href="#">Accounting &amp; Finance</a></li>
+                  <li><a href="#">Admin / Office</a></li>
+                  <li><a href="#">Arch / Engineering</a></li>
+                  <li><a href="#">Art / Media / Design</a></li>
+                  <li><a href="#">Biotech / Science</a></li>
+                  <li><a href="#">Business / Mngmnt</a></li>
+                  <li><a href="#">Customer Service</a></li>
+                  <li><a href="#">Education</a></li>
+                  <li><a href="#">Etc / Misc</a></li>
+                  <li><a href="#">Food / Bev / Hosp</a></li>
+                  <li><a href="#">General Labor</a></li>
+                </ul>
+                <ul class="menu col-2">
+                  <li><a href="#">Government</a></li>
+                  <li><a href="#">Human Resources</a></li>
+                  <li><a href="#">Legal / Paralegal</a></li>
+                  <li><a href="#">Manufacturing</a></li>
+                  <li><a href="#">Marketing / PR / Ad</a></li>
+                  <li><a href="#">Medical / Health</a></li>
+                  <li><a href="#">Nonprofit Sector</a></li>
+                  <li><a href="#">Real Estate</a></li>
+                  <li><a href="#">Retail / Wholesale</a></li>
+                  <li><a href="#">Sales / Biz Dev</a></li>
+                </ul>
+                <ul class="menu col-3">
+                  <li><a href="#">Salon / Spa / Fitness</a></li>
+                  <li><a href="#">Security</a></li>
+                  <li><a href="#">Skilled Trade / Craft</a></li>
+                  <li><a href="#">Software / QA / DBA</a></li>
+                  <li><a href="#">Systems / Network</a></li>
+                  <li><a href="#">Technical Support</a></li>
+                  <li><a href="#">Transport</a></li>
+                  <li><a href="#">TV / Film / Video</a></li>
+                  <li><a href="#">Web / Info Design</a></li>
+                  <li><a href="#">Writing / Editing</a></li>
                 </ul>
               </li>
               <li><a href="#">Services</a>
                 <ul class="menu bd-purp nav-dropdown-2">
-                  <div class="grid-x">
-                    <div class="cell large-6">
-                      <li><a href="#">Automotive</a></li>
-                      <li><a href="#">Beauty</a></li>
-                      <li><a href="#">Cell / Mobile</a></li>
-                      <li><a href="#">Computer</a></li>
-                      <li><a href="#">Creative</a></li>
-                      <li><a href="#">Cycle</a></li>
-                      <li><a href="#">Event</a></li>
-                      <li><a href="#">Farm &amp; Garden</a></li>
-                      <li><a href="#">Financial</a></li>
-                      <li><a href="#">Household</a></li>
-                    </div>
-                    <div class="cell large-6">
-                      <li><a href="#">Labor / Move</a></li>
-                      <li><a href="#">Legal</a></li>
-                      <li><a href="#">Lessons</a></li>
-                      <li><a href="#">Marine</a></li>
-                      <li><a href="#">Pet</a></li>
-                      <li><a href="#">Real Estate</a></li>
-                      <li><a href="#">Skilled Trade</a></li>
-                      <li><a href="#">Sm Biz Ads</a></li>
-                      <li><a href="#">Travel / Vacation</a></li>
-                      <li><a href="#">Write / Ed / Tran</a></li>
-                    </div>
-                  </div>
+                  <li><a href="#">Automotive</a></li>
+                  <li><a href="#">Beauty</a></li>
+                  <li><a href="#">Cell / Mobile</a></li>
+                  <li><a href="#">Computer</a></li>
+                  <li><a href="#">Creative</a></li>
+                  <li><a href="#">Cycle</a></li>
+                  <li><a href="#">Event</a></li>
+                  <li><a href="#">Farm &amp; Garden</a></li>
+                  <li><a href="#">Financial</a></li>
+                  <li><a href="#">Household</a></li>
+                </ul>
+                <ul class="menu col-2">
+                  <li><a href="#">Labor / Move</a></li>
+                  <li><a href="#">Legal</a></li>
+                  <li><a href="#">Lessons</a></li>
+                  <li><a href="#">Marine</a></li>
+                  <li><a href="#">Pet</a></li>
+                  <li><a href="#">Real Estate</a></li>
+                  <li><a href="#">Skilled Trade</a></li>
+                  <li><a href="#">Sm Biz Ads</a></li>
+                  <li><a href="#">Travel / Vacation</a></li>
+                  <li><a href="#">Write / Ed / Tran</a></li>
                 </ul>
               </li>
             </ul>
@@ -620,31 +672,31 @@
                 <ul class="orbit-container">
                   <li class="is-active orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars1.1.jpg" alt="car">
+                      <a href="cars1.html"><img class="orbit-image card-image" src="images/cars1.1.jpg" alt="car"></a>
                       <figcaption class="orbit-caption">$43,892 || 2014 Chevrolet Corvette Stingray</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <a href="cars1.html"><img class="orbit-image" src="images/cars1.2.jpg" alt="car"></a>
+                      <a href="cars1.html"><img class="orbit-image card-image" src="images/cars1.2.jpg" alt="car"></a>
                       <figcaption class="orbit-caption">$43,892 || 2014 Chevrolet Corvette Stingray</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <a href="cars1.html"><img class="orbit-image" src="images/cars1.3.jpg" alt="car"></a>
+                      <a href="cars1.html"><img class="orbit-image card-image" src="images/cars1.3.jpg" alt="car"></a>
                       <figcaption class="orbit-caption">$43,892 || 2014 Chevrolet Corvette Stingray</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <a href="cars1.html"><img class="orbit-image" src="images/cars1.4.jpg" alt="car"></a>
+                      <a href="cars1.html"><img class="orbit-image card-image" src="images/cars1.4.jpg" alt="car"></a>
                       <figcaption class="orbit-caption">$43,892 || 2014 Chevrolet Corvette Stingray</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <a href="cars1.html"><img class="orbit-image" src="images/cars1.5.jpg" alt="car"></a>
+                      <a href="cars1.html"><img class="orbit-image card-image" src="images/cars1.5.jpg" alt="car"></a>
                       <figcaption class="orbit-caption">$43,892 || 2014 Chevrolet Corvette Stingray</figcaption>
                     </figure>
                   </li>
@@ -672,19 +724,19 @@
                 <ul class="orbit-container">
                   <li class="is-active orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars2.1.jpg" alt="car">
+                      <img class="orbit-image card-image" src="images/cars2.1.jpg" alt="car">
                       <figcaption class="orbit-caption">$3,900 || 2003 Toyota Corolla</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars2.2.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars2.2.jpg" alt="cars">
                       <figcaption class="orbit-caption">$3,900 || 2003 Toyota Corolla</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars2.3.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars2.3.jpg" alt="cars">
                       <figcaption class="orbit-caption">$3,900 || 2003 Toyota Corolla</figcaption>
                     </figure>
                   </li>
@@ -710,37 +762,37 @@
                 <ul class="orbit-container">
                   <li class="is-active orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars3.1.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars3.1.jpg" alt="cars">
                       <figcaption class="orbit-caption">$34,435 || 2017 Ford Mustang GT Convertable</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars3.2.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars3.2.jpg" alt="cars">
                       <figcaption class="orbit-caption">$34,435 || 2017 Ford Mustang GT Convertable</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars3.3.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars3.3.jpg" alt="cars">
                       <figcaption class="orbit-caption">$34,435 || 2017 Ford Mustang GT Convertable</figcaption>
                     </figure>
                   </li>
                   <li class="is-active orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars3.4.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars3.4.jpg" alt="cars">
                       <figcaption class="orbit-caption">$34,435 || 2017 Ford Mustang GT Convertable</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars3.5.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars3.5.jpg" alt="cars">
                       <figcaption class="orbit-caption">$34,435 || 2017 Ford Mustang GT Convertable</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars3.6.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars3.6.jpg" alt="cars">
                       <figcaption class="orbit-caption">$34,435 || 2017 Ford Mustang GT Convertable</figcaption>
                     </figure>
                   </li>
@@ -769,31 +821,31 @@
                 <ul class="orbit-container">
                   <li class="is-active orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars4.1.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars4.1.jpg" alt="cars">
                       <figcaption class="orbit-caption">$24,990 || 2014 Mercedes-Benz E-550 Sedan</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars4.2.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars4.2.jpg" alt="cars">
                       <figcaption class="orbit-caption">$24,990 || 2014 Mercedes-Benz E-550 Sedan</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars4.3.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars4.3.jpg" alt="cars">
                       <figcaption class="orbit-caption">$24,990 || 2014 Mercedes-Benz E-550 Sedan</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars4.4.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars4.4.jpg" alt="cars">
                       <figcaption class="orbit-caption">$24,990 || 2014 Mercedes-Benz E-550 Sedan</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars4.5.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars4.5.jpg" alt="cars">
                       <figcaption class="orbit-caption">$24,990 || 2014 Mercedes-Benz E-550 Sedan</figcaption>
                     </figure>
                   </li>
@@ -821,13 +873,13 @@
                 <ul class="orbit-container">
                   <li class="is-active orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars5.1.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars5.1.jpg" alt="cars">
                       <figcaption class="orbit-caption">$4,000 || Jeep Cherokee</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars5.2.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars5.2.jpg" alt="cars">
                       <figcaption class="orbit-caption">$4,000 || Jeep Cherokee</figcaption>
                     </figure>
                   </li>
@@ -852,13 +904,13 @@
                 <ul class="orbit-container">
                   <li class="is-active orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars6.1.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars6.1.jpg" alt="cars">
                       <figcaption class="orbit-caption">$14,250 || 2008 Jeep Wrangler</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars6.2.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars6.2.jpg" alt="cars">
                       <figcaption class="orbit-caption">$14,250 || 2008 Jeep Wrangler</figcaption>
                     </figure>
                   </li>
@@ -883,13 +935,13 @@
                 <ul class="orbit-container">
                   <li class="is-active orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars7.1.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars7.1.jpg" alt="cars">
                       <figcaption class="orbit-caption">$6,495 || 2012 Volkswagen Passat SEL</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars7.2.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars7.2.jpg" alt="cars">
                       <figcaption class="orbit-caption">$6,495 || 2012 Volkswagen Passat SEL</figcaption>
                     </figure>
                   </li>
@@ -914,19 +966,19 @@
                 <ul class="orbit-container">
                   <li class="is-active orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars8.1.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars8.1.jpg" alt="cars">
                       <figcaption class="orbit-caption">$10,500 || 2012 Ford F-150 Super Cab</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars8.2.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars8.2.jpg" alt="cars">
                       <figcaption class="orbit-caption">$10,500 || 2012 Ford F-150 Super Cab</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars8.3.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars8.3.jpg" alt="cars">
                       <figcaption class="orbit-caption">$10,500 || 2012 Ford F-150 Super Cab</figcaption>
                     </figure>
                   </li>
@@ -952,13 +1004,13 @@
                 <ul class="orbit-container">
                   <li class="is-active orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars9.1.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars9.1.jpg" alt="cars">
                       <figcaption class="orbit-caption">$12,990 || 2014 Ford CMAX Hybrid SE</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars9.2.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars9.2.jpg" alt="cars">
                       <figcaption class="orbit-caption">$12,990 || 2014 Ford CMAX Hybrid SE</figcaption>
                     </figure>
                   </li>
@@ -983,13 +1035,13 @@
                 <ul class="orbit-container">
                   <li class="is-active orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars10.1.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars10.1.jpg" alt="cars">
                       <figcaption class="orbit-caption">$6,988 || 2011 Chevrolet Equinox LTZ</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars10.2.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars10.2.jpg" alt="cars">
                       <figcaption class="orbit-caption">$6,988 || 2011 Chevrolet Equinox LTZ</figcaption>
                     </figure>
                   </li>
@@ -1014,13 +1066,13 @@
                 <ul class="orbit-container">
                   <li class="is-active orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars11.1.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars11.1.jpg" alt="cars">
                       <figcaption class="orbit-caption">$5,900 || 2006 Mercedes E-350</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars11.2.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars11.2.jpg" alt="cars">
                       <figcaption class="orbit-caption">$5,900 || 2006 Mercedes E-350</figcaption>
                     </figure>
                   </li>
@@ -1045,13 +1097,13 @@
                 <ul class="orbit-container">
                   <li class="is-active orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars12.1.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars12.1.jpg" alt="cars">
                       <figcaption class="orbit-caption">$9,995 || 2013 Mazda CX-5 Touring</figcaption>
                     </figure>
                   </li>
                   <li class="orbit-slide">
                     <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/cars12.2.jpg" alt="cars">
+                      <img class="orbit-image card-image" src="images/cars12.2.jpg" alt="cars">
                       <figcaption class="orbit-caption">$9,995 || 2013 Mazda CX-5 Touring</figcaption>
                     </figure>
                   </li>
