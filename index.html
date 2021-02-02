@@ -15,12 +15,13 @@
   </head>
   <body>
     <header>  
+        <!-- Custom header layout -->
         <div class="custom-top grid-x grid-padding-x bd-black">
           <div class="small-4 medium-2 large-1 cell">
             <a href="index.html"><img class="logo" src="images/logo.jpeg" alt="Logo"/> 
               <strong class="hide-for-medium"> EUBIT</strong></a>
           </div>
-
+          <!-- Navigation for medium and large screen -->
           <div class="show-for-medium medium-8 large-6 cell">
             <ul class="no-bullet horizontal menu expanded menu-hover-lines">
               <li><a href="index.html">Home</a></li>
@@ -30,6 +31,7 @@
               <li><a href="link5.html">Businesses</a></li>
             </ul>
           </div>
+          <!-- Navigation Icons and Search bar -->
           <div class="small-8 medium-2 large-5 nav-icon">
             <button class="fas fa-bars light nav-icon hide-for-medium" data-open="nav-menu"></button>
             <a href="login.html"><i class="fas fa-user light nav-icon"></i></a>
@@ -42,6 +44,7 @@
             </div>
           </div>
         </div>
+        <!-- reveals for small screen when menu bar is selected -->
         <div>
           <div class="reveal bd-black" id="nav-menu" aria-labelledby="nav-menu" data-reveal>
             <ul class="no-bullet vertical menu align-center menu-hover-lines">
@@ -62,6 +65,7 @@
             </button>
           </div>
         </div>
+        <!-- Reveals when language icon selected -->
       <div class="reveal bd-black" id="lang-select" aria-labelledby="lang-select" data-reveal>
         <form class="bd-black">
           <label>Select Language
@@ -87,9 +91,10 @@
         </button>
       </div>
     </header>
-    <main class="grid-container fluid bd-black light bd-image">
-      <div class="space3"></div>
+    <main class="grid-container fluid bd-black light bd-image">  <!-- adds background image of rotating connected world -->
+      <div class="space3"></div>  <!-- adds empty space for every occurence -->
       <div class="grid-x">
+        <!-- interactive login/learn more buttons -->
         <div class="cell small-10 medium-9 small-offset-2 medium-offset-3 large-8 large-offset-3">
           <button onclick="window.location.href='login.html'" class="btn-home">Join the<br>Network</button>&nbsp;&nbsp;
           <button onclick="window.location.href='learn.html'" class="btn-home">Learn<br>More</button>
@@ -97,18 +102,101 @@
       </div>
       <div class="space"></div>
       <div class="bd-black section">
-        <h2 class="text-center">Section 1</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia in sequi tempore voluptas recusandae ipsam velit odio atque! Perferendis, quia mollitia nihil odit iure assumenda! Officiis esse cupiditate modi, iste dolore at illum animi architecto, placeat alias labore itaque corrupti commodi quasi eveniet libero vel nemo iusto. Numquam alias eligendi quidem odit ipsum, earum suscipit reiciendis nobis, sint quisquam repudiandae corrupti dolorum pariatur maxime repellendus iure? Nam nostrum voluptates tempora sunt ipsa, quo molestias expedita, laboriosam eaque aliquid vel? Obcaecati ipsum temporibus fuga incidunt aliquid dicta molestiae provident. Voluptatum ullam voluptatem eius, maiores pariatur sint tenetur magni dolor earum natus laudantium iusto deserunt ex repellendus reprehenderit ea facilis eos unde nam enim quis possimus? Voluptates similique officia saepe vero alias ducimus autem amet? Facilis reiciendis veniam excepturi id quis delectus eaque vel aliquam, quo officia nemo adipisci, aperiam exercitationem suscipit hic tempora animi pariatur quaerat similique, aut molestiae ipsum velit! Dolore dolorem et culpa libero consequatur architecto ad quis ex repellendus sint maiores commodi nesciunt, explicabo vitae id eaque eum ducimus ipsam odit, tempora fuga minus temporibus! Nulla, dolor at libero dolorum velit odio culpa? Impedit nesciunt magni odit. Suscipit molestias optio est cumque error vel minima a quibusdam cupiditate?</p>
+        <h2 class="text-center">Cryptocurrency Markets</h2>
+        <div class="grid-x grid-padding-x grid-margin-x">
+          <div class="cell large-6">
+            <!-- top 10 cryptocurrency widgets according to coinmarkketcap  -->
+            <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+            <div class="coinmarketcap-currency-widget" data-currencyid="1" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div>
+            <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+            <div class="coinmarketcap-currency-widget" data-currencyid="1027" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div>
+            <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+            <div class="coinmarketcap-currency-widget" data-currencyid="52" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div>
+            <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+            <div class="coinmarketcap-currency-widget" data-currencyid="825" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div>
+            <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+            <div class="coinmarketcap-currency-widget" data-currencyid="2" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div>
+          </div>
+          <div class="cell large-6">
+            <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+            <div class="coinmarketcap-currency-widget" data-currencyid="1831" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div>
+            <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+            <div class="coinmarketcap-currency-widget" data-currencyid="1975" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div>
+            <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+            <div class="coinmarketcap-currency-widget" data-currencyid="2010" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div>
+            <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+            <div class="coinmarketcap-currency-widget" data-currencyid="6636" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div>
+            <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+            <div class="coinmarketcap-currency-widget" data-currencyid="1839" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div>
+          </div>
+        </div>
       </div>
       <div class="space3"></div>
-      <div class="bd-black section">
-        <h2 class="text-center">Section 2</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam expedita cumque consequuntur ex amet blanditiis totam unde! Dolores, voluptatem doloribus blanditiis inventore fugit ratione voluptatum repellat quam provident amet accusamus quisquam temporibus neque odit minus voluptate ipsam repudiandae. Dolor illo obcaecati voluptatibus mollitia iste error, recusandae qui quod omnis, odit nam at ipsam fuga odio animi aliquid! Magnam, obcaecati accusamus! Expedita autem laboriosam sint quos quasi omnis, minima fuga ut fugit aspernatur sed corporis adipisci sit a debitis unde impedit odio nobis error cupiditate eos. Ducimus consequatur facere earum quia dignissimos eaque minima quae sequi ut, cupiditate necessitatibus accusantium id animi? Optio rem soluta ab iste esse quidem repellat mollitia dolorum. Repudiandae ut incidunt a dolorum quidem laborum distinctio praesentium. Voluptas beatae tempora quo optio perspiciatis id unde illum dolorum fugit sed nobis molestiae neque et quae rerum debitis sint, recusandae eius corporis totam hic eligendi, nemo ipsam facere? Obcaecati dolorem suscipit architecto excepturi hic, cupiditate cum ducimus libero asperiores amet quisquam laboriosam ex eveniet. Voluptate rem placeat in sunt est natus fuga. Recusandae dignissimos eveniet molestiae debitis. Ipsa provident architecto quam laudantium nobis. Excepturi possimus, ducimus quidem ex, sed quod assumenda atque nihil magni deleniti repellat nobis minus rerum.</p>
+      <div class="bd-black section grid-x grid-padding-x grid-padding-y grid-margin-x grid-margin-y text-center">
+        <div class="cell">
+          <h2>Digital Currency for the Modern World</h2>
+        </div>
+        <div class="cell">
+          <h4 class="text-center">Eubit makes money efficient for a more equal world.<br>Simple to pay with, easy to accept, and open to all</h4>
+        </div>
+        <div class="cell medium-6 large-4">
+          <span><i class="far fa-handshake"></i></span>
+          <h5>Fee-less</h5>
+          <p>Eubit is fee-less, making it practical and inclusive for everyone in the world.</p>
+        </div>
+        <div class="cell medium-6 large-4">
+          <span><i class="fas fa-seedling"></i></span>
+          <h5>Eco-friendly</h5>
+          <p>Without relying on printing or minting, Eubit is sustainable digital money.</p>
+        </div>
+        <div class="cell medium-6 large-4">
+          <span><i class="fas fa-angle-double-right"></i></span>
+          <h5>Instant</h5>
+          <p>Digital money should be quick and easy-to-use, Eubit is ready when you are.</p>
+        </div>
       </div>
       <div class="space3"></div>
-      <div class="bd-black section">
-        <h2 class="text-center">Section 3</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolores sed facere soluta blanditiis voluptates maxime, corrupti, veritatis nostrum deserunt distinctio assumenda veniam totam expedita vel quaerat inventore laborum eligendi nulla natus ipsa fuga impedit, quisquam iste? Tempore aperiam alias voluptatum, ipsa odit nulla officiis qui omnis. Vero aperiam ducimus, repellendus eveniet eius nam doloremque quo odit a tempore, totam facilis numquam consectetur voluptas illo facere minus ullam praesentium ex enim quis fuga aspernatur. Porro id facere quia odio at, suscipit quasi impedit totam fugiat numquam beatae recusandae doloribus ad error? Quidem accusantium nemo aperiam quia adipisci voluptatum hic autem culpa repellendus laudantium amet cumque assumenda fugit ea aliquid consequuntur quisquam sapiente libero rem, doloribus eius sequi sed. Vel accusantium, maiores saepe ipsa laboriosam similique omnis aperiam nostrum iste culpa dolorum nisi non molestiae in earum illum optio consectetur voluptatibus eos facilis repudiandae libero facere? Enim temporibus vero, reiciendis hic ipsum qui sequi quo explicabo, labore iure recusandae? Atque libero veritatis ad, rerum totam praesentium eligendi omnis pariatur sapiente impedit cum doloremque laudantium a inventore possimus perferendis dolore aperiam ut odit. Architecto atque autem natus doloribus aliquam optio. Necessitatibus tempore quo temporibus consequuntur molestias atque accusantium repudiandae! Excepturi, sit sequi!</p>
+      <div class="bd-black section grid-x grid-padding-x grid-padding-y grid-margin-x grid-margin-y text-center">
+        <div class="cell">
+          <!-- recent crypto news articles -->
+          <h2 class="text-center">Latest News</h2>
+        </div>
+        <div class="cell medium-6 large-4">
+          <a href="https://www.coindesk.com/xrp-rises-more-than-30-as-altcoins-surf-bitcoins-wave" target="_blank"><img class="round news-img" src="images/news6.png" alt="crypto article"></a>
+          <a href="https://www.coindesk.com/xrp-rises-more-than-30-as-altcoins-surf-bitcoins-wave" target="_blank"><h4>XRP Rises More Than 30% as Altcoins Piggyback on Bitcoin’s Wave</h4></a>
+          <p>XRP has surged to 16-month highs, leading a pack of cryptocurrencies all benefiting from bitcoin’s rally toward historic levels.</p>
+          <h5>21 Nov. 2020</h5>
+        </div>
+        <div class="cell medium-6 large-4">
+          <a href="https://www.coindesk.com/market-wrap-bitcoin-hits-18-8k-defi-passes-14b" target="_blank"><img class="round news-img" src="images/news1.png" alt="crypto article"></a>
+          <a href="https://www.coindesk.com/market-wrap-bitcoin-hits-18-8k-defi-passes-14b" target="_blank"><h4>Market Wrap: Bitcoin Hits $18.8K as Total Crypto Locked in DeFi Passes $14B</h4></a>
+          <p>The price of bitcoin hit new 2020 highs as the “alternative to gold” narrative increases. Meanwhile, smaller crypto tokens might be helping push DeFi to new heights.</p>
+          <h5>20 Nov. 2020</h5>
+        </div>
+        <div class="cell medium-6 large-4">
+          <a href="https://www.coindesk.com/microstrategy-wants-to-be-in-the-bitcoin-business-not-just-an-investor" target="_blank"><img class="round news-img" src="images/news2.png" alt="crypto article"></a>
+          <a href="https://www.coindesk.com/microstrategy-wants-to-be-in-the-bitcoin-business-not-just-an-investor" target="_blank"><h4>MicroStrategy Wants to Be in the Bitcoin Business, Not Just an Investor</h4></a>
+          <p>MicroStrategy executives are on the hunt for blockchain experts who could help the publicly traded firm build a suite of bitcoin data services.</p>
+          <h5>20 Nov. 2020</h5>
+        </div>
+        <div class="cell medium-6 large-4">
+          <a href="https://www.coindesk.com/blockrock-bitcoin-puts-eth" target="_blank"><img class="round news-img" src="images/news3.png" alt="crypto article"></a>
+          <a href="https://www.coindesk.com/blockrock-bitcoin-puts-eth" target="_blank"><h4>Blockchain Bites: BlockRock Exec Says Bitcoin Is ‘Here to Stay,’ Investors Load Into BTC Puts</h4></a>
+          <p>Major bitcoin miners are signaling their support for the network’s Taproot upgrade. Institutional buyers are loading up on BTC puts, Deribit analysts say. Goldman Sachs thinks the  “digital yuan” could be in a billion hands in a decade. </p>
+          <h5>20 Nov. 2020</h5>
+        </div>
+        <div class="cell medium-6 large-4">
+          <a href="https://www.coindesk.com/us-firm-launches-company-sponsored-bitcoin-retirement-plans" target="_blank"><img class="round news-img" src="images/news4.png" alt="crypto article"></a>
+          <a href="https://www.coindesk.com/us-firm-launches-company-sponsored-bitcoin-retirement-plans" target="_blank"><h4>US Firm Launches Company-Sponsored Bitcoin Retirement Plans</h4></a>
+          <p>After running a year-long test, Digital Asset Investment Management (DAiM), a U.S.-based crypto investment adviser, has launched what it says are the first company-sponsored retirement plans supporting bitcoin.</p>
+          <h5>20 Nov. 2020</h5>
+        </div>
+        <div class="cell medium-6 large-4">
+          <a href="https://www.coindesk.com/japans-banking-giant-mufg-plans-to-launch-blockchain-payment-network-in-2021" target="_blank"><img class="round news-img" src="images/news5.png" alt="crypto article"></a>
+          <a href="https://www.coindesk.com/japans-banking-giant-mufg-plans-to-launch-blockchain-payment-network-in-2021" target="_blank"><h4>Japan’s Banking Giant MUFG Plans to Launch Blockchain Payment Network in 2021</h4></a>
+          <p>Mitsubishi UFJ Financial Group (MUFG), one of the largest banking institutions in Japan, is set to launch its high-speed blockchain payment network with the U.S.-based tech firm Akamai in 2021. </p>
+          <h5>20 Nov. 2020</h5>
+        </div>
       </div>
       <div class="space3"></div>
     </main>
@@ -147,7 +235,11 @@
         </div>
       </div>
       <div class="grid-x grid-padding-x">
-        <div class="medium-9 medium-offset-3 large-offset-6 large-6 cell">
+        <div class="large-6 cell copyright">
+          <p>&copy; EUBIT Project 2020 Released under the Phoenix Corp. License</p>
+        </div>
+        <div class="medium-9 large-6 cell">
+          <!-- social media accounts -->
           <ul class="light social-icons menu horizontal no-bullet float-right row">
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -157,7 +249,6 @@
             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
           </ul>
         </div>
-          <p>&copy; EUBIT Project 2020 Released under the Phoenix Corp. License</p>
       </div>
     </footer>
 <script src="js/vendor/jquery.js"></script>

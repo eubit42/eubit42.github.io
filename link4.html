@@ -15,12 +15,13 @@
   </head>
   <body>
     <header>  
+      <!-- custom header and navigation bar -->
         <div class="custom-top grid-x grid-padding-x bd-black">
           <div class="small-4 medium-2 large-1 cell">
             <a href="index.html"><img class="logo" src="images/logo.jpeg" alt="Logo"/> 
               <strong class="hide-for-medium"> EUBIT</strong></a>
           </div>
-
+          <!-- navigation -->
           <div class="show-for-medium medium-8 large-6 cell">
             <ul class="no-bullet horizontal menu expanded menu-hover-lines">
               <li><a href="index.html">Home</a></li>
@@ -30,6 +31,7 @@
               <li><a href="link5.html">Businesses</a></li>
             </ul>
           </div>
+          <!-- navigation icons -->
           <div class="small-8 medium-2 large-5 nav-icon">
             <button class="fas fa-bars light nav-icon hide-for-medium" data-open="nav-menu"></button>
             <a href="login.html"><i class="fas fa-user light nav-icon"></i></a>
@@ -42,6 +44,7 @@
             </div>
           </div>
         </div>
+        <!-- reveals when menu icon selected -->
         <div>
           <div class="reveal bd-black" id="nav-menu" aria-labelledby="nav-menu" data-reveal>
             <ul class="no-bullet vertical menu align-center menu-hover-lines">
@@ -62,6 +65,7 @@
             </button>
           </div>
         </div>
+        <!-- reveals when language icon selected -->
       <div class="reveal bd-black" id="lang-select" aria-labelledby="lang-select" data-reveal>
         <form class="bd-black">
           <label>Select Language
@@ -93,22 +97,26 @@
       <div class="space"></div>
       <h3 class="text-center">Where would you like to start?</h3><br>
       <div class="section bd-black grid-x grid-padding-x grid-padding-y grid-margin-x grid-margin-y">
-        <div class="medium-6 large-4 cell dev-block round">
+        <!-- equalizing sections for alignment -->
+        <div class="medium-6 large-4 cell dev-block round" data-equalizer data-equalize-on="medium">
           <span><i class="fas fa-user-graduate dev-icon"></i></span>
           <h4>Learn Eubit Developement</h4>
-          <p>Read up on core concepts and the Eubit stack with our docs</p>
+          <!-- equalizing sections for alignment -->
+          <p data-equalizer-watch>Read up on core concepts and the Eubit stack with our docs</p>
           <a href="construction.html" class="button dev-btn round">Read the docs</a>
         </div>
         <div class="medium-6 large-4 cell dev-block round">
           <span><i class="fas fa-flask dev-icon"></i></span>
           <h4>Start Experimenting</h4>
-          <p>Feel like experimenting first, and asking questions later?</p>
+          <!-- equalizing sections for alignment -->
+          <p data-equalizer-watch>Feel like experimenting first, and asking questions later?</p>
           <a href="construction.html" class="button dev-btn round">Play with code</a>
         </div>
-        <div class="large-4 cell dev-block round">
+        <div class="large-4 cell dev-block round" data-equalizer-watch="paragraph">
           <span><i class="fas fa-database dev-icon"></i></span>
           <h4>Set Up Local Environment</h4>
-          <p>Get your stack ready for building by configuring a development environment.</p>
+          <!-- equalizing sections for alignment -->
+          <p data-equalizer-watch>Get your stack ready for building by configuring a development environment.</p>
           <a href="construction.html" class="button dev-btn round">Choose your stack</a>
         </div>
       </div>
@@ -238,6 +246,7 @@
           </ul>
         </div>
       </div>
+      <!-- social media icons -->
       <div class="grid-x grid-padding-x">
         <div class="medium-9 medium-offset-3 large-offset-6 large-6 cell">
           <ul class="light social-icons menu horizontal no-bullet float-right row">
@@ -263,6 +272,8 @@
     })
 
     var elem = new Foundation.ResponsiveToggle(element, options);
+    // used to equalize the section tagged
+    var elem = new Foundation.Equalizer(element, options);
  </script>
 </body>
 </html>
